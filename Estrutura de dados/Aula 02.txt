@@ -1,0 +1,29 @@
+• Estrutura de dados - Java, C#, Python, C++
+  → Físicas
+    - Tipos de variáveis - int, double, float, char, boolean
+    - Define o tamanho de memória alocada
+      - são dependedes de linguages
+  → Abstraas (COLEÇÕES)
+    - Algoritmos de gestão de memória (CRUD) - C-CREATE, R-READ, U-UPDATE, - D-DELETE
+      - Inserção (add, Add, append, push_back)
+      - Percurso
+        - Exibir (System.out.print, Console.print, print) 
+        - Contar/Definir tamanho (size, Count, len, size)
+        - Localizar (contains, Contains, in, )
+        - Remover (delete, Delete, delete, delete)
+      - Atualização (update)
+      - Remoção
+    - Lineares
+      - Listas: todas as operações → Armazenar e exibir (relatórios)
+        - ArrayList, List, [], vector
+      - Pilhas: Last In, First Out (LIFO) - somente operações de inserção e remoção no topo 
+        - Stack
+          - Inserção: push ou add
+          - Remoção: pop ou delete
+      - Filas: First In, First Out (FUFO) - Somente operações de inserção (cauda ou fim) e remoção (cabeça ou início), quando quero prioridade
+        - Insersão: add ou append
+        - Remoção: delete ou remove
+    - Não lineares
+      - Árvores: Tem todas as operações - BUSCA
+        - Tree
+      - Grafos: Muda completamente o foco, pois o objetivo é mapear pontos ou definir rotas (melhor caminhos), como em mapas rodoviários, infraestrutura tecnológicas, fase de jogos
