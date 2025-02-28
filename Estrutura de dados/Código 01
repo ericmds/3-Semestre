@@ -1,0 +1,76 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Random;
+
+public class Lista{
+    public static void main(String[] args) {
+        // Código que popula uma lista com n números aleatórios inteiros
+        ArrayList<Integer> lista = new ArrayList<>();
+
+        Random gerador = new Random();
+        int tamanho = gerador.nextInt(10, 15);
+        int numero;
+
+        // Metodo inserir
+        for (int i=0; i<tamanho; i++){
+            numero = gerador.nextInt(50); // Gerando números de 0 até 999
+            if(!lista.contains(numero)){ // Controlar duplicados
+                lista.add(numero);
+            }
+        }
+
+        //  Ordenar
+        lista.sort(null);
+
+        // Metodo exibir
+        /*System.out.println("Exibindo por índices");;
+        for(int i=0; i < lista.size(); i++){
+            System.out.println(lista.get(i));
+        }*/
+
+        System.out.println("Exibindo por objetos");
+        System.out.println("Total de "+lista.size()); // Mostrar total
+        for(Integer i: lista){
+            System.out.println(i);
+        }
+        
+        // Apagar um número
+        numero = 15;
+        if (lista.remove((Integer)15)){
+            System.out.println("Número localizado e excluido");
+        } else{
+            System.out.println("Numero nao localizado");
+        }
+        
+
+        /*System.out.println("Lista de inteiros usando Iterator");
+        Iterator<Integer> iterator = lista.iterator();
+        while (iterator.hasNext()){
+            numero = iterator.next();
+            System.out.println(numero);
+        }*/
+
+        // PERCORRER VIA INDICE
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i) % 2 != 0) {
+                lista.set(i,-1);
+            }
+        }
+        System.out.println("Exibindo por objetos");
+        System.out.println("Total de "+lista.size()); // Mostrar total
+        for(Integer i: lista){
+            System.out.println(i);
+        }
+        
+        
+        // PERCORRER VIA OBJETO
+        //for (Integer i: lista){
+        //   if (i % 2 != 0){
+        //        i = -1;
+        //    }
+        //}
+
+
+    }
+
+}
