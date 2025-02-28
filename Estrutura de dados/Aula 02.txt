@@ -27,3 +27,9 @@
       - Árvores: Tem todas as operações - BUSCA
         - Tree
       - Grafos: Muda completamente o foco, pois o objetivo é mapear pontos ou definir rotas (melhor caminhos), como em mapas rodoviários, infraestrutura tecnológicas, fase de jogos
+ 
+• Remove clássico apaga a primeira ocorrencia, remove all remove todos
+
+• COPILOT
+  → Na conta do GitHub pessoal, colocar como email principal o email UFN
+  → No github education → user + password
