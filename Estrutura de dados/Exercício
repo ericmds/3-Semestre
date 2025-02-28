@@ -1,0 +1,36 @@
+/*1) Baseado no código anterior (lista de Integer), construir um programa em Java que receba , via teclado do usuário, n nomes de pessoas. Assim como o primeiro código:
+i) Não poderá gaver nomes duplicados
+ii) Ao final do cadastro, a lista precisará ser ordenada;
+iii) O código deve permitir que o usuário digite um nome para pesquisa e o programa exclua esse nome da lista
+iv) Exiba novamente a lista
+
+Em java, como colocar maiúsculo um nome antes de armazena-lo na lista.
+
+Tarefa de casa:
+    Descobrir a diferença em java de Vector, ArrayList e LinkedList
+    Construir exemplo*/
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Exercicio {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> listaNomes = new ArrayList<>();
+        
+        //Declaração de variáveis
+        int tamanho = 100;
+        
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("*** Digite os nomes que você deseja guardar ***");
+        for (int i=0; i<tamanho; i++){
+            System.out.print("Digite um nome: ");
+            nomes = teclado.nextLine().toUpperCase());
+            if(!listaNomes.contains(nomes)){
+                listaNomes.add(nomes);
+            }
+        }
+
+    }
+}
