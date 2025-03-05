@@ -1,0 +1,58 @@
+  • Artefato
+→ Documento textual, tudo que consigo colocar em um arquivo texto
+→ Códigos
+→ Executaveis, mains
+
+  • Fluxos
+→ Fluxo de processo evolucionário
+  ↳ Executado em forma "circular"
+  ↳ Volta pelas cinco atividades
+  ↳ Versão mais completa do software
+
+  • Modelos de Processos Prescritivos (Tradicionais)
+→ Modelo cascata (1970)
+  ↳ Modelo de fluxo linear, acontece depois da outra, por isso do nome cascata, não volta para a etapa anterior
+  ↳ Modelo muito "engessado", não haverá mudanças após a solicitação do cliente
+  ↳ O cliente só tem contato ao final do desenvolvimento
+  ↳ Um dos problemas é devido ao teste do código ser feito somente no final
+  ↳ Modelo muito demorado
+
+→ Modelo V (1980/1990)
+  ↳ Praticamente em modelo cascata, mas cada etapa de desenvolvimento tem sua etapa de testes
+  ↳ Uma vez que o código tenha sido gerado, a equipe se desloca para cima, realizando varios testes que validem cada modelo criado
+    ↳ Teste de unidade, realizado pela equipe de desenvolvimento
+    ↳ Teste de integração, juntando os códigos da equipe
+    ↳ Teste do sistema
+    ↳ Teste de aceitação, cliente verifica se o software é compativel com o que foi solicitado
+  ↳ Lado positivos, entrega do software com menos defeitos
+  ↳ Lado negativo, o tempo de entrega é muito demorado
+
+  → Problemas
+    ↳ Projetos reais raramente seguem o fluxo sequencial 
+    ↳ É difícil para o cliente estabelecer explicitamente todas as necessidades 
+    ↳ Mudanças podem provocar confusão à medida que a equipe de projeto prossegue
+    ↳ O cliente só irá ter contato a final do projeto, um erro grave, se não detectado até o programa operacional ser revisto, pode ser desastroso.
+
+→ Modelos de processo incremental
+  ↳ "Mini cascastas"
+  ↳ O software é desenvolvido e entregue em partes
+  ↳ Necessita de equipes grandes para trabalharem nos módulos do sistema
+  
+→ Modelos de processo evolucionário
+  ↳ Apresentam características que possibilitam desenvolver versões cada vez mais completas do software.
+
+  ↳ Prototipação
+    ↳ Desenvolvimento rapido de um software para realizar a entrega e receber o feedback rápido do cliente, para poder realizar ajustes
+    ↳ Começa com a comunicação, realiza um reunião com os envolvidos para definir os objetivos, intifica-se os requisitos para esquematizar as áreas necessárias para um definição mais ampla
+    ↳ Depois da construção de um protótipo, que é empregado e avaliado pelos envolvidos que fornecerão um retorno que servirá para aprimorar os requisitos
+    ↳ A iteração ocrro conforme o protótipo se ajusta às necessidades
+    ↳ O projeto cresce de maneira desorganizada, facilitando bugs, devido a falta de padronização
+    * Probelmas
+      ↳ 
+  
+  ↳ Modelo Espiral
+    ↳ É um gerador de modelos de processos dirigidos a riscos e é utilizado para guiar a engenharia de sistema intensivos de software, que ocorre de forma concorrente e tem múltiplos envolvidos
+    ↳ Primeiro modelo que fala sobre análise de risco
+      ↳ Para cada volta que é dada, é feita um analise de risco
+      ↳ É uma análise que é feita pare ver se a equipe vai conseguir realizar a entrega, sem risco, do produto
+      
