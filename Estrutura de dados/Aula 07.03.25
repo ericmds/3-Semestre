@@ -1,0 +1,128 @@
+••• Relembrado •••
+
+• Java
+  
+  • Lista
+    → Inserir:
+      ↳ add
+      ↳ Add
+      ↳ append
+      ↳ insert
+      ↳ pushback
+      ↳ localizar//
+  
+  
+  
+  • Percorrer  
+    → Índice
+      ↳ for (int i= 0; i< lista.size(); i++){
+        }
+    → Objeto
+      ↳ for (Integer i : lista){
+        }
+    → Interação
+      ↳ while (i.hasNext()){
+        System.out.println(i.next())
+        if (i.next() % 2 == 0) {
+          lista.remove(i);
+        }
+
+Exercícios feitos:
+1) Geração de números aleatórios em listas
+  ↳ add, percorrer, localizar...
+2) Cadastro de nomes controlando duplicados
+  ↳ add, percorrer, localizar, String, (toUpperCasa(), split())
+
+Exercícios para hoje
+1) C# exercício dos nomes
+2) Java e C#
+  ↳ Gerar valores aleatórios (n valores) de glicemia aleatórios entre 50 e 240
+    ↳ aplicar a média
+    ↳ aplicar a mediana
+      ↳ ordenar
+      ↳ capturar o valor do meio
+    ↳ aplicar a moda
+
+---------------------------------------------------- Lista em C# -----------------------------------------------------------------
+
+*/
+
+List<int> lista = new List<int>(); // Criando lista
+Random gerador = new Random(); // Definindo gerador
+
+int quantidade = gerador.Next(10,20); // Definir quantidade dos números aleatório
+for (int i = 0; i < quantidade; i++)
+{
+    lista.Add(gerador.Next(1000)); // Adicionar na lista números de 0 a 1000
+}
+
+lista.Sort(); // Ordenar a lista
+
+/* 
+ 
+// Percorrer por índice
+for (int i = 0;i < lista.Count;i++)
+{
+    Console.WriteLine(lista[i]); // Exibir no console
+}
+
+// Percorrer por foreach (Objeto)
+foreach (var i in lista)
+{
+    Console.WriteLine(i);
+}
+
+*/
+
+// Percorrer por Iterator
+var item = lista.GetEnumerator();
+while (item.MoveNext())
+{
+    int numero = item.Current;
+    Console.WriteLine(numero);
+}
+----------------------------------------------------------------------------------------------------------------------------------
+
+/*
+1) Fazer um programa que roda um lista, nessa lista precisa:
+    a) Guardar nomes completos, 
+    b) Transformar todos em maiúsculo, 
+    c) Ordena-los
+    d) Verificar se não existe nomes repitidos, se houver, mostar uma mensagem de erro
+    e) Mostrar a quantidade de números cadastrados
+    f) Dar a opção para continuar ou encerrrar
+*/
+
+List<string> listaNomes = new List<string>(); // Criar lista
+
+// Inserir nomes
+string opcao; // variavel para opcoes
+string nome; // variavel para nome
+
+do
+{
+    Console.WriteLine("Digite um nome completo:");
+    nome = Console.ReadLine(); // Lendo os nomes
+    nome = nome.ToUpper(); // Transformando em maiúsculas
+
+    if (!listaNomes.Contains(nome)) // Verificando se o nome já esta na lista
+    {
+        listaNomes.Add(nome); // Se não está vai adicionar na lista
+    } else
+    {
+        Console.WriteLine("Nome já cadastrado");
+    }
+    Console.WriteLine(" 1 - Continuar; 2 - Finalizar"); // Opção de continuar para o usuario
+    opcao = Console.ReadLine();
+
+
+} while (opcao != "2");
+
+listaNomes.Sort(); // Ordenando a lista em ordem alfabética
+Console.WriteLine("A lista contem: " + listaNomes.Count); // Mostrando quantos nomes contem na lista
+foreach(var i in listaNomes) // Mostrando a lista
+{
+    Console.WriteLine(i);
+}
+
+----------------------------------------------------------------------------------------------------------------------------------
