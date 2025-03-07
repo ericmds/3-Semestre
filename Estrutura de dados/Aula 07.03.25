@@ -42,7 +42,16 @@ Exercícios para hoje
       ↳ ordenar
       ↳ capturar o valor do meio
     ↳ aplicar a moda
-
+3) Lista 1
+    ↳ n números aleatórios tamanho n
+      ↳ 0 a 100
+      ↳ sem repetidos
+   Lista 2
+    ↳ com n números aleatórios tamanho n
+      ↳ 0 a 100
+      ↳ sem repetidos
+   Lista 3
+      ↳ números comuns nas duas listas 
 ---------------------------------------------------- Lista em C# -----------------------------------------------------------------
 
 */
@@ -126,3 +135,45 @@ foreach(var i in listaNomes) // Mostrando a lista
 }
 
 ----------------------------------------------------------------------------------------------------------------------------------
+
+/* 2) Gerar valores aleatórios (n valores) de glicemia aleatórios entre 50 e 240
+     a) Aplicar a média
+     b) Aplicar a mediana
+        ↳ Ordenar
+        ↳ Capturar o valor do meio
+     c) Aplicar a moda
+*/
+
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+List<int> listaGlicemia = new List<int>(); // Criando lista para a glicemia
+Random gerador = new Random(); // Definindo gerador
+
+int quantidade = gerador.Next(10,20); // Definindo quantidade aleatória entre 10 e 20
+for (int i = 0; i < quantidade; i++)
+{
+    listaGlicemia.Add(gerador.Next(50,240)); // Adicionar na lista números entre 50 e 240
+}
+
+listaGlicemia.Sort(); // Ordenar a lista
+
+Console.WriteLine("*** Valores de glicemia ***");
+var item = listaGlicemia.GetEnumerator();
+while (item.MoveNext())
+{
+    int numero = item.Current;
+    Console.WriteLine(numero);
+}
+
+Console.WriteLine("\nA lista de glicemia contém: " +listaGlicemia.Count + " valores");
+
+// Media
+double soma = 0, media;
+foreach (int i in listaGlicemia)
+{
+    soma += i;
+}
+media = soma / quantidade;
+Console.WriteLine("A média de todas as glicemia é: "+media);
+
+// Mediana
