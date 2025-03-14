@@ -1,0 +1,47 @@
+//ProjetoBancoDeDados[Andrisa,Matheus] - Disciplina
+//EstruturaDeDados[Andrisa, Matheus] - Disciplina
+//ComunicacaoDeDados[Andrisa] - Disciplica
+
+//listaCienciaComputacao
+
+//1 - Criar n listas representando as disciplinas do curso CC
+//2 - Para cada lista, colocar alguns nomes de alunos
+//3 - Criar a lista cienciaComputacao e adicionar todas as listas de disciplinas
+//4 - Mostrar o nome do aluno e quantas disciplinas ele cursa
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Exercicio {
+    public static void main(String[] args) {
+        ArrayList<String> ProjetoBancoDeDados = new ArrayList<>();
+        ArrayList<String> EstruturaDeDados = new ArrayList<>();
+        ArrayList<String> ComunicacaoDeDados = new ArrayList<>();
+        ArrayList<ArrayList> listaCienciaComputacao = new ArrayList<>();
+
+        ProjetoBancoDeDados.add("Éric");
+        ProjetoBancoDeDados.add("Vanessa");
+        ProjetoBancoDeDados.add("Luiza");
+        ProjetoBancoDeDados.add("Jão");
+        ProjetoBancoDeDados.add("Bernardo");
+        listaCienciaComputacao.add(ProjetoBancoDeDados);
+
+        EstruturaDeDados.add("Éric");
+        EstruturaDeDados.add("Vanessa");
+        EstruturaDeDados.add("Luiza");
+        listaCienciaComputacao.add(EstruturaDeDados);
+
+        ComunicacaoDeDados.add("Éric");
+        ComunicacaoDeDados.add("Jão");
+        ComunicacaoDeDados.add("Bernardo");
+        ComunicacaoDeDados.add("Maria");
+        listaCienciaComputacao.add(ComunicacaoDeDados);
+
+        for (ArrayList lista : listaCienciaComputacao){
+            for (Object i : lista){
+                
+            }
+        }
+        
+    }
+}
