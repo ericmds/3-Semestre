@@ -1,0 +1,56 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListaCurso {
+    public static void main(String[] args) {
+        ArrayList<String> estruturaDeDados = new ArrayList<String>();
+        estruturaDeDados.add("Ceretta");
+        estruturaDeDados.add("Cleber");
+        estruturaDeDados.add("Andrisa");
+        estruturaDeDados.add("Luiza");
+        estruturaDeDados.sort(null);
+
+        ArrayList<String> bancoDeDados = new ArrayList<String>();
+        bancoDeDados.add("Ceretta");
+        bancoDeDados.add("Andrisa");
+        bancoDeDados.add("Luiza");
+        bancoDeDados.sort(null);
+        
+        ArrayList<String> inteligenciaArtifical = new ArrayList<String>();
+        inteligenciaArtifical.add("Ceretta");
+        inteligenciaArtifical.add("Miguel");
+        inteligenciaArtifical.sort(null);
+
+        ArrayList<ArrayList> cienciaComputacao = new ArrayList<ArrayList>();
+        cienciaComputacao.add(estruturaDeDados);
+        cienciaComputacao.add(bancoDeDados);
+        cienciaComputacao.add(inteligenciaArtifical);
+
+        for (Object disciplina : cienciaComputacao){
+            System.out.println(disciplina);
+        }
+
+        System.out.println("\nExibindo alunos das disciplinas...");
+        ArrayList<String> nomesAvalaliados = new ArrayList<>();
+        String nomeTmp;
+        int contador;
+
+        for (ArrayList disciplina : cienciaComputacao){
+            for (Object aluno : disciplina){
+                nomeTmp = aluno.toString();
+                if (!nomesAvalaliados.contains(nomeTmp)){
+                    nomesAvalaliados.add(nomeTmp);
+                    contador = 0;
+                    for (ArrayList d : cienciaComputacao){
+                        for (Object a : d){
+                            if (nomeTmp.equals(a.toString())){
+                                contador++;
+                            }
+                        }
+                    }
+                    System.out.println(nomeTmp + " aparece em " + contador + " disciplinas");
+                }
+            }
+        }
+    }
+}
