@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+
+public class ListaCursoSemNome {
+    public static void main(String[] args) {
+        ArrayList<ArrayList<String>> cienciaComputacao = new ArrayList<>();
+        //0 - Estrutura de dados
+        cienciaComputacao.add(new ArrayList<String>()); // Lista que dentro da lista cria uma lista vazia
+        //1 - Banco de dados
+        cienciaComputacao.add(new ArrayList<String>()); // Lista que dentro da lista cria uma lista vazia
+        //2 - Inteligencia Artificial
+        cienciaComputacao.add(new ArrayList<String>()); // Lista que dentro da lista cria uma lista vazia
+
+        //0 - Estrutura de dados 
+        cienciaComputacao.get(0).add("Luiza");
+        cienciaComputacao.get(0).add("Andrisa");
+        cienciaComputacao.get(0).add("Cereta");
+        cienciaComputacao.get(0).sort(null);
+
+        //1 - Banco de dados
+        cienciaComputacao.get(1).add("Andrisa");
+        cienciaComputacao.get(1).add("Cereta");
+        cienciaComputacao.get(1).sort(null);
+
+        //2 - Inteligencia Artificial
+        cienciaComputacao.get(2).add("Miguel");
+        cienciaComputacao.get(2).add("Ceretta");
+        cienciaComputacao.get(2).add("Cereta");
+        cienciaComputacao.get(2).sort(null);
+
+        for (Object disciplina : cienciaComputacao){
+            System.out.println(disciplina);
+        }
+
+        System.out.println("\nExibindo alunos das disciplinas...");
+        ArrayList<String> nomesAvalaliados = new ArrayList<>();
+        String nomeTmp;
+        int contador;
+
+        for (ArrayList<String> disciplina : cienciaComputacao){
+            for (Object aluno : disciplina){
+                nomeTmp = aluno.toString();
+                if (!nomesAvalaliados.contains(nomeTmp)){
+                    nomesAvalaliados.add(nomeTmp);
+                    contador = 0;
+                    for (ArrayList<String> d : cienciaComputacao){
+                        for (Object a : d){
+                            if (nomeTmp.equals(a.toString())){
+                                contador++;
+                            }
+                        }
+                    }
+                    System.out.println(nomeTmp + " aparece em " + contador + " disciplinas");
+                }
+            }
+        }
+    }
+}
