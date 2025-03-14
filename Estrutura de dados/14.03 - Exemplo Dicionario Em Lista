@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class ExemploDicionarioEmLista {
+    public static void main(String[] args) {
+        //Criando a lista que vai armazenar os mapas
+        List<Map<String, String>> listaDeDicionarios = new ArrayList<>();
+
+        // Criando o primeiro dicionário (mapa)
+        Map<String, String> dicionario1 = new HashMap<>();
+        dicionario1.put("nome", "João");
+        dicionario1.put("idade", "25");
+
+        // Criando o segundo dicionário (mapa)
+        Map<String, String> dicionario2 = new HashMap<>();
+        dicionario2.put("nome", "Maria");
+        dicionario2.put("idade", "30");
+
+        // Adicionando os mapas na lista
+        listaDeDicionarios.add(dicionario1);
+        listaDeDicionarios.add(dicionario2);
+
+        // Imprimindo os dados
+        for (Map<String, String> dicionario : listaDeDicionarios){
+            System.out.println("Nome: " + dicionario.get("nome"));
+            System.out.println("Idade: " + dicionario.get("idade"));
+            System.out.println("-----------------------");
+        }
+
+
+    }
+}
