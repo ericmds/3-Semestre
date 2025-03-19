@@ -9,7 +9,7 @@
       
     • DSDM é um processo iterativo em que cada iteração segue a regra dos 80%. Ou seja, somente o trabalho suficiente é requisitado para cada incremento, para facilitar o movimento para o próximo incremento
   
-  **✦Feature Driven Development (FDD)**
+  **✦ Feature Driven Development (FDD)**
   
     • Desenvolver um Modelo geral - (Comunicação)
       ↳ 
@@ -33,14 +33,13 @@
    **✦ Kanban**
     
     • Aplicativos como Tello, Notion são exemplos de Kanban 
-    • É um quadro que ele tem divisões
+    • É um quadro que ele tem divisões:
      ↳ Backlog → Selecionado → Análise → Desenvolvimento → Testes → Feito
    
    **✦ Rational Unified Process (RUP)**
 
     ⮛ O RUP é um modelo de processo moderno, derivado de trabalhos sobre a UML
     ⮛ É um modelo forte em documentação
-    
     ⮛ Dividido em "duas visões/duas perspectivas"
      ↳ Perspectiva dinâmica e perspectiva estática
 
