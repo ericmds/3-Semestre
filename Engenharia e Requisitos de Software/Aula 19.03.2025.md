@@ -37,9 +37,9 @@
      ↳ Backlog → Selecionado → Análise → Desenvolvimento → Testes → Feito
    
    ## ✦ Rational Unified Process (RUP)**
-   
-    ⮛ O RUP é um modelo de processo moderno, derivado de trabalhos sobre a UML
-    ⮛ É um modelo forte em documentação
+    ⮛ É o único modelo híbrido
+    ⮛ É um modelo de processo moderno, derivado de trabalhos sobre a UML
+    ⮛ Muito forte em documentação
     ⮛ Dividido em "duas visões/duas perspectivas"
      ↳ Perspectiva dinâmica e perspectiva estática
     
