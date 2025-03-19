@@ -44,7 +44,7 @@
      ↳ Perspectiva dinâmica e perspectiva estática
     
    ### PERSPECTIVA DINÂMICA
-      → Mostra as fases do modelo ao longo do processo\
+      → Mostra as fases do modelo ao longo do processo  
       → Possui quatro fases para o ciclo
        ↳ Concepção → Elaboração → Construção → Transição
       
