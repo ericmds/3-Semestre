@@ -48,7 +48,7 @@
       → Possui quatro fases para o ciclo
        ↳ Concepção → Elaboração → Construção → Transição
       
-  > Concepção
+      • Concepção
        ↳
       • Elaboração
        ↳ 
