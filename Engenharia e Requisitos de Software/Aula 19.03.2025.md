@@ -35,3 +35,23 @@
     • Aplicativos como Tello, Notion são exemplos de Kanban 
     • É um quadro que ele tem divisões
      ↳ Backlog → Selecionado → Análise → Desenvolvimento → Testes → Feito
+   
+   **⮛ Rational Unified Process (RUP)**
+
+    • O RUP é um modelo de processo moderno, derivado de trabalhos sobre a UML
+    • É um modelo forte em documentação
+    • Dividido em "duas visões/duas perspectivas"
+    • Perspectiva dinâmica
+     ↳ Mostra as fases do modelo ao longo do processo
+    • Perspectiva estática 
+     ↳ 
+    *** Possui quatro fases para o ciclo ***
+     ↳ Concepção → Elaboração → Construção → Transição
+    • Concepção
+     ↳
+    • Elaboração
+     ↳ 
+    • Construção
+     ↳ Envolve projeto, programação e teste
+    • Transição
+     ↳ Fase de implementação
