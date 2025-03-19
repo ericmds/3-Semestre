@@ -1,6 +1,7 @@
 # MODELOS DE PROCESSOS ÁGEIS ⮛
 
 **Dynamic Systems Development Method (DSDM)**
+  
   • Oferece uma metodologia para construir e mantes sistemas que atendem restrições de prazo apertado através do uso da **prototipagem incremental** em um ambiente de projeto controlado
   
   • Baseia-se em uma versão modificado do *Princípio de Pareto*
