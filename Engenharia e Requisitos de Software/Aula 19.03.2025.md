@@ -11,21 +11,21 @@
 
 **⮛ FDD - Feature Driven Development**
 
-  • Desenvolver um Modelo geral - (Comunicação)
-    ↳ 
-    
-  • Construir uma Lista de Funcionalidades - (Comunicação)
-    ↳ Ordenar por prioridades
-    ↳ Contruir o "Becklog" do produto
-    
-  • Planejar por Funcionalidade - (Planejamento)
-    ↳ Diagrama de GANTT - ferramenta de gestão de projetos que representa visualmente as tarefas de um projeto em uma linha temporal
-    ↳ 
-    
-  • Projetar por Funcionalidade - 
-    ↳ Projeta
-    ↳ Constroi
-  • Desenvolver por Funcionalidade - 
-  
-    ↳ Entrega
-    ↳ Incrementa
+   • Desenvolver um Modelo geral - (Comunicação)
+     ↳ 
+     
+   • Construir uma Lista de Funcionalidades - (Comunicação)
+     ↳ Ordenar por prioridades
+     ↳ Contruir o "Becklog" do produto
+     
+   • Planejar por Funcionalidade - (Planejamento)
+     ↳ Diagrama de GANTT - ferramenta de gestão de projetos que representa visualmente as tarefas de um projeto em uma linha temporal
+     ↳ 
+     
+   • Projetar por Funcionalidade - 
+     ↳ Projeta
+     ↳ Constroi
+   • Desenvolver por Funcionalidade - 
+   
+     ↳ Entrega
+     ↳ Incrementa
