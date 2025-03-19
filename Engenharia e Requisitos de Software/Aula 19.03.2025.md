@@ -43,12 +43,12 @@
     ⮛ Dividido em "duas visões/duas perspectivas"
      ↳ Perspectiva dinâmica e perspectiva estática
     
-   ##### PERSPECTIVA DINÂMICA
+   ### PERSPECTIVA DINÂMICA
       → Mostra as fases do modelo ao longo do processo
       → Possui quatro fases para o ciclo
        ↳ Concepção → Elaboração → Construção → Transição
        \**
-      • Concepção
+>  Concepção
        ↳
       • Elaboração
        ↳ 
