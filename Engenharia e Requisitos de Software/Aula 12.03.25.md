@@ -1,6 +1,6 @@
 # ⮛ Desenvolvimento Ágil
 
-  ** O QUE É DESENVOLVIMENTO ÁGIL**
+  **O QUE É DESENVOLVIMENTO ÁGIL**
   
     → Agil = Mudança → Adaptação a mudanças
     → Flexibilidade: sem metodologias engessadas, tamnho e organização de equipes diversas
