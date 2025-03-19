@@ -58,3 +58,4 @@
        ↳ Fase de implementação
     
   ### PERSPECTIVA ESTÁTICA  
+a
