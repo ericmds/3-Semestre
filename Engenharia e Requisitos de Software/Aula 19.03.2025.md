@@ -1,4 +1,4 @@
-# MODELOS DE PROCESSOS ÁGEIS ⮛
+# MODELOS DE PROCESSOS ÁGEIS
 
   ## ✦ Dynamic Systems Development Method (DSDM)
     
@@ -56,7 +56,5 @@
        ↳ Envolve projeto, programação e teste
       • Transição
        ↳ Fase de implementação
-
-    • PERSPECTIVA ESTÁTICA 
-     ↳ 
-     
+    
+  ### PERSPECTIVA ESTÁTICA  
