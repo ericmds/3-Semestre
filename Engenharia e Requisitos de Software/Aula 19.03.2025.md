@@ -30,6 +30,8 @@
       ↳ Entrega
       ↳ Incrementa
   
-   **⮛ Kanvan**
-   
+   **⮛ Kanban**
+    
+    • Aplicativos como Tello, Notion são exemplos de Kanban 
     • É um quadro que ele tem divisões
+     ↳ Backlog → Selecionado → Análise → Desenvolvimento → Testes → Feito
