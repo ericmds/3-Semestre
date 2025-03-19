@@ -8,3 +8,24 @@
     ↳ 80% de uma aplicação pode ser entregue em 20% do tempo que levaria para entregar a aplicação completa (100%)
     
   • DSDM é um processo iterativo em que cada iteração segue a regra dos 80%. Ou seja, somente o trabalho suficiente é requisitado para cada incremento, para facilitar o movimento para o próximo incremento
+
+**⮛ FDD - Feature Driven Development**
+
+  • Desenvolver um Modelo geral - (Comunicação)
+    ↳ 
+    
+  • Construir uma Lista de Funcionalidades - (Comunicação)
+    ↳ Ordenar por prioridades
+    ↳ Contruir o "Becklog" do produto
+    
+  • Planejar por Funcionalidade - (Planejamento)
+    ↳ Diagrama de GANTT - ferramenta de gestão de projetos que representa visualmente as tarefas de um projeto em uma linha temporal
+    ↳ 
+    
+  • Projetar por Funcionalidade - 
+    ↳ Projeta
+    ↳ Constroi
+  • Desenvolver por Funcionalidade - 
+  
+    ↳ Entrega
+    ↳ Incrementa
