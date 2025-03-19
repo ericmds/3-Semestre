@@ -30,6 +30,6 @@
       ↳ Entrega
       ↳ Incrementa
   
-  **⮛ Kanvan**
-  
-   • É um quadro que ele tem divisões
+   **⮛ Kanvan**
+   
+    • É um quadro que ele tem divisões
