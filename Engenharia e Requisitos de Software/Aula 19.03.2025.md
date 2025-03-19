@@ -31,4 +31,5 @@
       ↳ Incrementa
   
   **⮛ Kanvan**
+  
    • É um quadro que ele tem divisões
