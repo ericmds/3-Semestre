@@ -9,7 +9,7 @@
       
     • DSDM é um processo iterativo em que cada iteração segue a regra dos 80%. Ou seja, somente o trabalho suficiente é requisitado para cada incremento, para facilitar o movimento para o próximo incremento
   
-  **✦ FDD - Feature Driven Development**
+  **✦Feature Driven Development (FDD)**
   
     • Desenvolver um Modelo geral - (Comunicação)
       ↳ 
