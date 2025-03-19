@@ -1,6 +1,6 @@
 # MODELOS DE PROCESSOS ÁGEIS ⮛
 
-  **✧ Dynamic Systems Development Method (DSDM)**
+  **✦ Dynamic Systems Development Method (DSDM)**
     
     • Oferece uma metodologia para construir e mantes sistemas que atendem restrições de prazo apertado através do uso da prototipagem incremental em um ambiente de projeto controlado
     
@@ -30,21 +30,21 @@
       ↳ Entrega
       ↳ Incrementa
   
-   **✯ Kanban**
+   **✦ Kanban**
     
     • Aplicativos como Tello, Notion são exemplos de Kanban 
     • É um quadro que ele tem divisões
      ↳ Backlog → Selecionado → Análise → Desenvolvimento → Testes → Feito
    
-   **⮛ Rational Unified Process (RUP)**
+   **✦ Rational Unified Process (RUP)**
 
-    • O RUP é um modelo de processo moderno, derivado de trabalhos sobre a UML
-    • É um modelo forte em documentação
+    ⮛ O RUP é um modelo de processo moderno, derivado de trabalhos sobre a UML
+    ⮛ É um modelo forte em documentação
     
-    • Dividido em "duas visões/duas perspectivas"
+    ⮛ Dividido em "duas visões/duas perspectivas"
      ↳ Perspectiva dinâmica e perspectiva estática
 
-     → PERSPECTIVA DINÂMICA
+     • PERSPECTIVA DINÂMICA
       → Mostra as fases do modelo ao longo do processo
       → Possui quatro fases para o ciclo
        ↳ Concepção → Elaboração → Construção → Transição
