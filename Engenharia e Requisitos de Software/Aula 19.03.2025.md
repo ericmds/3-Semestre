@@ -9,7 +9,7 @@
       
     • DSDM é um processo iterativo em que cada iteração segue a regra dos 80%. Ou seja, somente o trabalho suficiente é requisitado para cada incremento, para facilitar o movimento para o próximo incremento
   
-  ## ✦ Feature Driven Development (FDD)**
+  ## ✦ Feature Driven Development (FDD)
   
     • Desenvolver um Modelo geral - (Comunicação)
       ↳ 
@@ -36,7 +36,7 @@
     • É um quadro que ele tem divisões:
      ↳ Backlog → Selecionado → Análise → Desenvolvimento → Testes → Feito
    
-   ## ✦ Rational Unified Process (RUP)**
+   ## ✦ Rational Unified Process (RUP)
     ⮛ É o único modelo híbrido
     ⮛ É um modelo de processo moderno, derivado de trabalhos sobre a UML
     ⮛ Muito forte em documentação
