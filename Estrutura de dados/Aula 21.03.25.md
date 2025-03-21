@@ -30,6 +30,7 @@ class Aluno {
 
 Aluno umAluno = new Aluno("Ceretta");
 ```
+```
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
