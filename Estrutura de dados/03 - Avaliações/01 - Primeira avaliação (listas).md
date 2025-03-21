@@ -5,12 +5,14 @@
 ---
 ## Linguagem escolhida: **JAVA**
 ```java
-class DadosPessoa{
-    String nomePessoa;
+import java.util.Scanner;
+
+class Pessoa{
+    String Pessoa;
     String email;
 
-    public DadosPessoa(String nomepessoa, String email){
-        this.nomePessoa = nomePessoa;
+    public Pessoa(String nome, String email){
+        this.Pessoa = Pessoa;
         this.email = email;
     }
 }
@@ -18,14 +20,12 @@ class DadosPessoa{
 
 
 public class Trabalho {
+
     public static void main(String[] args) {
-
-
-
-
-    
-}    
+        Scanner teclado = new Scanner(System.in);
+        
+        
+        teclado.close();
+    }    
 }
-
-
 ```
