@@ -10,7 +10,7 @@
     
       List, Set, Map
 
-```
+```java
   List<Integer> lista = new ArrayList<>()
   HashMap<String,String> dicionario = new HashMap<>(); → Dicionário
 
@@ -30,7 +30,7 @@ class Aluno {
 
 Aluno umAluno = new Aluno("Ceretta");
 ```
-```
+```java
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
