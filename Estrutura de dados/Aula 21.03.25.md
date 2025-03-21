@@ -1,12 +1,12 @@
-✦ Estrutura de dados
-  ⮛ Físicas - variáveis e seus tipos
-  ⮛ Abstratas - algoritmos de manipulação + coleções
-    → Listas
-      ↳ Conjunto de dados
-    → Pilha
-    → Fila
-    → Árvore
-    → Grafo
+# ✦ Estrutura de dados
+  ## ⮛ Físicas - variáveis e seus tipos
+  ## ⮛ Abstratas - algoritmos de manipulação + coleções
+      → Listas
+        ↳ Conjunto de dados
+      → Pilha
+      → Fila
+      → Árvore
+      → Grafo
     
 List, Set, Map
 
