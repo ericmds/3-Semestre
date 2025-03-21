@@ -5,5 +5,27 @@
 ---
 ## Linguagem escolhida: **JAVA**
 ```java
+class DadosPessoa{
+    String nomePessoa;
+    String email;
+
+    public DadosPessoa(String nomepessoa, String email){
+        this.nomePessoa = nomePessoa;
+        this.email = email;
+    }
+}
+
+
+
+public class Trabalho {
+    public static void main(String[] args) {
+
+
+
+
+    
+}    
+}
+
 
 ```
