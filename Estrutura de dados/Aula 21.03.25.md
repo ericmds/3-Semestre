@@ -10,7 +10,7 @@
     
 List, Set, Map
 
-'''
+```
   List<Integer> lista = new ArrayList<>()
   HashMap<String,String> dicionario = new HashMap<>(); → Dicionário
 
@@ -29,4 +29,4 @@ class Aluno {
 }
 
 Aluno umAluno = new Aluno("Ceretta");
-'''
+```
