@@ -8,7 +8,7 @@
       → Árvore
       → Grafo
     
-List, Set, Map
+      List, Set, Map
 
 ```
   List<Integer> lista = new ArrayList<>()
