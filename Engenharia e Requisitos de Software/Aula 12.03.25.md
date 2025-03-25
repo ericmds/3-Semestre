@@ -30,37 +30,37 @@
     • Agilidade e o Custo das Mudanças
       ↳ Os custos  de mudanças aumentam de forma não lineat
       ↳ Em teoria o custo final dos dois processos é igual, só não está distribuido de forma equilibrada
-  
-  • Modelos de Processo Ágil
-    ⮛ EXTREME PROGRAMING - XP
-      ↳ Emprega uma abordagem orientada a objetos, envolvendo um conjunto de regras e práticas constantes no contexto de quatro atividades metodológicas: planejamento, projeto, codificação e testes
-        Planejamento: → Histórias de usuários: 
-                        ↳ Pegar as caracteristicas que o usuario quer que o sistema tenha
-                        ↳ Com base no que o usuário quer cria-se critérios de teste de aceitação
-        Projeto:      → Princípio KIS
-                        ↳ Preserva a simplicidade, preferir um projeto simples do que um mais complexo
-                        ↳ Guia de implementação
-                        ↳ C.R.C - Classes, responsabilidades, colaboração
-        Codificação:  → Testes de unidades que exercitam cada gistória a ser incluída na versão corrente
-                      → Incremento de software
-                      → Programação em dupla, fornecendo mecanismo para resolução de problemas em tempo real (duas cabeças normalmente funcionam melhor que uma) e garantia de qualidade em tempo real (o código é revisto á medida que é criado)
-        Testes:       → Teste de unidade: implementados usando uma metodologia que capacite a ser automatizado (assim, poderão ser executados fácil e repetidamente)
-                      → Teste de aceitação: São especificados pelo cliente e mantêm o foco nas características e na funcionalidade do sisema total que são visíveis e que podem ser revistas pelo cliente
-     
-    ⮛ SCRUM.
-  → Backlog do Produto → "CAIXAS"
-    ↳ Lista de funcionalidades que o produto deve ter
-  → Sprint Backlog → "PASTAS"
-    ↳ Projetos - detalhamento da tarefa que vai ser realizada
-  → Spint → Etapa de desenvolvimento
-    ↳ Ciclo → Delimitação de tempo
-    ↳ DAILY → Uma vez por dia, se faz uma reunião com a equipe que está envolvida no projeto, juntamente com o Product Onner (responsavel para )
-      ↳ Se faz três perguntas em uma Daily:
-        ↳ 1º - O que tu fez desde a última reunião
-        ↳ 2º - Tu está tendo algum problema no projeto
-        ↳ 3º - E o que vai ser feito até a próxima reunião
-    → Entrega
-      ↳ "Subir para produção" → Colocar a funcionalidade no produto
+    
+    • Modelos de Processo Ágil
+      ⮛ EXTREME PROGRAMING - XP
+        ↳ Emprega uma abordagem orientada a objetos, envolvendo um conjunto de regras e práticas constantes no contexto de quatro atividades metodológicas: planejamento, projeto, codificação e testes
+          Planejamento: → Histórias de usuários: 
+                          ↳ Pegar as caracteristicas que o usuario quer que o sistema tenha
+                          ↳ Com base no que o usuário quer cria-se critérios de teste de aceitação
+          Projeto:      → Princípio KIS
+                          ↳ Preserva a simplicidade, preferir um projeto simples do que um mais complexo
+                          ↳ Guia de implementação
+                          ↳ C.R.C - Classes, responsabilidades, colaboração
+          Codificação:  → Testes de unidades que exercitam cada gistória a ser incluída na versão corrente
+                        → Incremento de software
+                        → Programação em dupla, fornecendo mecanismo para resolução de problemas em tempo real (duas cabeças normalmente funcionam melhor que uma) e garantia de qualidade em tempo real (o código é revisto á medida que é criado)
+          Testes:       → Teste de unidade: implementados usando uma metodologia que capacite a ser automatizado (assim, poderão ser executados fácil e repetidamente)
+                        → Teste de aceitação: São especificados pelo cliente e mantêm o foco nas características e na funcionalidade do sisema total que são visíveis e que podem ser revistas pelo cliente
+       
+      ⮛ SCRUM.
+    → Backlog do Produto → "CAIXAS"
+      ↳ Lista de funcionalidades que o produto deve ter
+    → Sprint Backlog → "PASTAS"
+      ↳ Projetos - detalhamento da tarefa que vai ser realizada
+    → Spint → Etapa de desenvolvimento
+      ↳ Ciclo → Delimitação de tempo
+      ↳ DAILY → Uma vez por dia, se faz uma reunião com a equipe que está envolvida no projeto, juntamente com o Product Onner (responsavel para )
+        ↳ Se faz três perguntas em uma Daily:
+          ↳ 1º - O que tu fez desde a última reunião
+          ↳ 2º - Tu está tendo algum problema no projeto
+          ↳ 3º - E o que vai ser feito até a próxima reunião
+      → Entrega
+        ↳ "Subir para produção" → Colocar a funcionalidade no produto
 
 
 
