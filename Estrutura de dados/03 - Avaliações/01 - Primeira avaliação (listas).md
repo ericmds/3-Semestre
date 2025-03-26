@@ -5,27 +5,77 @@
 ---
 ## Linguagem escolhida: **JAVA**
 ```java
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-class Pessoa{
-    String Pessoa;
+class Usuario {
+    String nome;
     String email;
 
-    public Pessoa(String nome, String email){
-        this.Pessoa = Pessoa;
+    public Usuario(String nome, String email) {
+        this.nome = nome;
         this.email = email;
     }
 }
 
+class GerenciadorEmail {
+    List<String> emailsCadastrados;
 
+    public GerenciadorEmail() {
+        emailsCadastrados = new ArrayList<>();
+    }
 
-public class Trabalho {
+    public String gerarEmailUnico(String emailBase) {
+        String emailFinal = emailBase;
+        int contador = 1;
 
+        while (emailsCadastrados.contains(emailFinal)) {
+            emailFinal = emailBase.split("@")[0] + contador + "@ufn.edu.br";
+            contador++;
+        }
+        
+        emailsCadastrados.add(emailFinal);
+        return emailFinal;
+    }
+}
+
+public class AtividadeAvaliativa {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+        List<Usuario> listaUsuarios = new ArrayList<>();
+        GerenciadorEmail gerenciador = new GerenciadorEmail();
         
+        int opcao = 0;
+        String nomeCompleto, emailBase, emailFinal;
+
+        do {
+            System.out.print("Digite o nome completo: ");
+            nomeCompleto = teclado.nextLine().toLowerCase();
+            String[] partesNome = nomeCompleto.split(" ");
+            
+            if (partesNome.length < 2) {
+                System.out.println("\n*** ERRO: Digite o nome completo! ***\n");
+                continue;
+            }
+            
+            emailBase = partesNome[0] + "." + partesNome[partesNome.length - 1] + "@ufn.edu.br";
+            emailFinal = gerenciador.gerarEmailUnico(emailBase);
+            listaUsuarios.add(new Usuario(nomeCompleto, emailFinal));
+            
+            System.out.println("\n1 - Continuar | 2 - Encerrar");
+            System.out.print("Escolha uma opcao: ");
+            opcao = teclado.nextInt();
+            teclado.nextLine();
+            System.out.println();
+        } while (opcao == 1);
+        
+        System.out.println("\nUsuarios cadastrados:");
+        for (Usuario u : listaUsuarios) {
+            System.out.println("Nome: " + u.nome + " | E-mail: " + u.email);
+        }
         
         teclado.close();
-    }    
+    }
 }
 ```
