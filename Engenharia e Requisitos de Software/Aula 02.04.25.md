@@ -9,9 +9,9 @@
     VALIDAÇÃO-->GERENCIAMENTO
     GERENCIAMENTO-->CONCEPÇÃO
 
-    <ins>C</ins>APTURE-->APPROVE
-    <ins>A</ins>PPROVE-->REFINE
-    <ins>R</ins>EFINE-->DETAIL
+    <ins>C</ins>APTURE--><ins>A</ins>PPROVE
+    <ins>A</ins>PPROVE--><ins>R</ins>EFINE
+    <ins>R</ins>EFINE--> <ins>D</ins>ETAIL
   ```
 
 # HISTÓRIA DE USUÁRIO
