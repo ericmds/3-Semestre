@@ -24,3 +24,10 @@
 **Como** *tipo usuário*, **eu quero** *meta/objetivo*, **para que** *beneficio/resultado*.
 
 <ins>**Como**</ins> gerente de projeto, <ins>**quero**</ins> criar e atribuir tarefas aos membros de equipe <ins>**para que**</ins> eu possa acompanhar o progresso do projeto e garantir que o trabalho seja concluido no prazo
+
+---
+
+* Se chama de história do usuario porque o ponto de vista sempre parte do usuario
+* Não se sapara em requisitos funcional e não-funcional
+  * Requisito funcional: coisa que o sistema faz, que tu consegue colocar em um botã
+  * Requisito não-funcionais: Caracteristica do sistema, velocidade, tipo de linguagem
