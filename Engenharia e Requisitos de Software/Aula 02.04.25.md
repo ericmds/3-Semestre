@@ -9,9 +9,9 @@
     VALIDAÇÃO-->GERENCIAMENTO
     GERENCIAMENTO-->CONCEPÇÃO
 
-    *C*APTURE-->*A*PPROVE
-    *A*PPROVE-->*R*EFINE
-    *R*EFINE-->*D*ETAIL
+    **C**APTURE-->**A**PPROVE
+    **A**PPROVE-->**R**EFINE
+    **R**EFINE-->**D**ETAIL
   ```
 
 # HISTÓRIA DE USUÁRIO
