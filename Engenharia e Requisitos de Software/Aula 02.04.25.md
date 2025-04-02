@@ -14,3 +14,8 @@
     VALIDAÇÃO-->GERENCIAMENTO
     COMUNICAÇÃO-->GERENCIAMENTO
   ```
+
+# HISTÓRIA DE USUÁRIO
+**Como** tipo usuário, **eu quero** meta/objetivo, **para que** beneficio/resultado.
+
+**Como** gerente de projeto, **quero** criar e atribuir tarefas aos membros de equipe **para que** eu possa acompanhar o progresso do projeto e garantir que o trabalho seja concluido no prazo
