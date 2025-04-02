@@ -14,6 +14,12 @@
     **R**EFINE-->**D**ETAIL
   ```
 
+## CARD - (CAPTURE, APROVE, REFINE, DETAIL)
+  * Capture = Levantamento: 
+  * Aprove = Elaboração: 
+  * Refine = Negociação: 
+  * Detail = Especificação: 
+  
 # HISTÓRIA DE USUÁRIO
 **Como** *tipo usuário*, **eu quero** *meta/objetivo*, **para que** *beneficio/resultado*.
 
