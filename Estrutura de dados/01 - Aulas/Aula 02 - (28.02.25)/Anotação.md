@@ -14,7 +14,7 @@
   * append
   * push_back__
     
-  ### Percurso
+  ### PERCURSO
   * Exibir
   * System.out.print
   * Console.print
@@ -36,3 +36,16 @@
   * Delete
   * delete
   * delete
+
+# LINEARES
+ ## LISTAS → Todas as operações, armazena e exibe, "relatórios"
+  * ArrayList
+  * List []
+  * Vector
+   
+ ## PILHAS
+ ## FILAS
+
+# NÃO LINEARES
+ ## ÁRVORES
+ ## GRAFOS
