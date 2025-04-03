@@ -14,15 +14,6 @@
 
 ### Em C#
 ```c#
-1) Fazer um programa que roda um lista, nessa lista precisa:
-    a) Guardar nomes completos, 
-    b) Transformar todos em maiúsculo, 
-    c) Ordena-los
-    d) Verificar se não existe nomes repitidos, se houver, mostar uma mensagem de erro
-    e) Mostrar a quantidade de números cadastrados
-    f) Dar a opção para continuar ou encerrrar
-*/
-
 List<string> listaNomes = new List<string>(); // Criar lista
 
 // Inserir nomes
@@ -70,14 +61,6 @@ foreach(var i in listaNomes) // Mostrando a lista
 
 ### Em C#
 ```c#
-/* 2) Gerar valores aleatórios (n valores) de glicemia aleatórios entre 50 e 240
-     a) Aplicar a média
-     b) Aplicar a mediana
-        ↳ Ordenar
-        ↳ Capturar o valor do meio
-     c) Aplicar a moda
-*/
-
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 List<int> listaGlicemia = new List<int>(); // Criando lista para a glicemia
