@@ -1,6 +1,7 @@
-# Relembrando - Aula com exercícios
-## Java
-* LISTA
+# Aula com exercícios
+## Relembrando
+### Java
+#### LISTA
   * Inserir
   * add
   * Add
@@ -9,22 +10,22 @@
   * pushback
   * localizar
     
-* PERCORRER  
-Índice
+### PERCORRER  
+#### Índice
 ```java
 for (int i= 0; i< lista.size(); i++) {
 
 }
 ```
 
-Objeto
+#### Objeto
 ```java
 for (Integer i : lista) {
 
 }
 ```
 
-Interação
+#### Interação
 ```java
 while (i.hasNext()) {
   System.out.println(i.next())
