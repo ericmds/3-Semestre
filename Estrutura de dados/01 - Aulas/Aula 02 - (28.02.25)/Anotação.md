@@ -6,28 +6,32 @@
     * São dependentes de linguagem
 
 # ABSTRATAS (COLEÇÕES)
-  * Algoritmos de gestão de memória → <ins>**C.R.U.D**</ins> = <ins>**C**</ins>reate, <ins>**R**</ins>ead, <ins>**U**</ins>pdate, <ins>**D**</ins>elete
-    * Inserção
-      * add
-      * Add
-      * append
-      * push_back__
-    * Percurso
-      * Exibir
-        * System.out.print
-        * Console.print
-        * print
-    * Contar/Definir tamanho
-      * size
-      * Count
-      * len
-      * size
-    * Localizar
-      * contains
-      * Contains
-      * in
-    * Remover
-      * delete
-      * Delete
-      * delete
-      * delete
+  ## Algoritmos de gestão de memória → <ins>**C.R.U.D**</ins> = <ins>**C**</ins>reate, <ins>**R**</ins>ead, <ins>**U**</ins>pdate, <ins>**D**</ins>elete
+  ### Inserção
+  * add
+  * Add
+  * append
+  * push_back__
+    
+  ### Percurso
+  * Exibir
+  * System.out.print
+  * Console.print
+  * print
+    
+  ### Contar/Definir tamanho
+  * size
+  * Count
+  * len
+  * size
+    
+  ### Localizar
+  * contains
+  * Contains
+  * in
+    
+  ### Remover
+  * delete
+  * Delete
+  * delete
+  * delete
