@@ -130,3 +130,28 @@ public class VectorExample {
 ```
 * Vector é sincronizado (thread-safe), então funciona bem em múltiplas threads
 * Possui as mesmas operações que ArrayList, mas é mais lento devido à sincronização
+
+## 2) Qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
+* Banco de Dados
+  * É um conjunto de informações organizadas e armazenadas para serem recuperadas e manipuladas
+  * Pode ser um arquivo simples ou um sistema mais estruturado
+
+* SGBD (Sistema Gerenciador de Banco de Dados)
+  * É um software que gerencia bancos de dados
+  * Permite criar, modificar, consultar e garantir a segurança dos dados
+  * Exemplos: MySQL, PostgreSQL, Oracle, SQL Server, MongoDB
+
+## 3) O que são SGBD Relacionais e SGBD Não Relacionais?
+* SGBD Relacionais (SQL)
+  * Usam tabelas (linhas e colunas) para armazenar os dados
+  * Seguem o modelo relacional e utilizam chaves primárias e estrangeiras
+  * Utilizam SQL (Structured Query Language) para manipulação dos dados
+  * São ótimos para relacionamentos bem estruturados
+  * Exemplos: MySQL, PostgreSQL, SQL Server, Oracle
+
+* SGBD Não Relacionais (NoSQL)
+  * Não usam tabelas e podem armazenar os dados em documentos JSON, chave-valor, colunas ou grafos
+  * Mais flexíveis para grandes volumes de dados não estruturados
+  * Não seguem o modelo tradicional de SQL
+  * São ótimos para big data e aplicações escaláveis
+  * Exemplos: MongoDB (documentos), Redis (chave-valor), Cassandra (colunar), Neo4j (grafos)
