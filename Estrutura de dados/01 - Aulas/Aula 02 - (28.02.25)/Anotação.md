@@ -14,8 +14,6 @@ Os tipos básicos de variáveis variam conforme a linguagem, mas geralmente incl
 * O tamanho da memória alocada depende da linguagem de programação e do compilador.
 * Em linguagens como C e C++, a alocação pode ser manual (malloc, new), enquanto em Java e Python é gerenciada pelo Garbage Collector.
 
----
-
 ## 2. Estruturas Abstratas (Coleções)
 As coleções são estruturas de dados que armazenam e organizam múltiplos valores.
 
@@ -33,8 +31,6 @@ Operações fundamentais para manipulação de dados em coleções:
  * Remove todas as ocorrências → removeAll (Java, C#)
 
 * Atualização → update
-
----
 
 ## 3. Estruturas Lineares
 São organizadas de forma sequencial na memória.
@@ -76,8 +72,6 @@ Segue a regra First In, First Out (FIFO) → O primeiro elemento inserido é o p
  * Python → collections.deque
  * C++ → queue<T>
 
----
-
 ## 4. Estruturas Não Lineares
 Não possuem um formato sequencial rígido.
 
@@ -96,13 +90,9 @@ Representam redes e relações complexas entre elementos.
  * Estruturas de rede (infraestrutura de internet).
  * IA e jogos (caminho mais curto entre pontos).
 
----
-
 ## 5. Observações sobre Remoção
 * remove() → Apaga somente a primeira ocorrência do elemento na estrutura.
 * removeAll() → Remove todas as ocorrências do elemento.
-
----
 
 ## 6. Copilot e GitHub Education
 ### 6.1 Configuração do Copilot
