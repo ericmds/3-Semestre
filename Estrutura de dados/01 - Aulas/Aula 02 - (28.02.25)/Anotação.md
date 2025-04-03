@@ -1,14 +1,13 @@
 # ESTRUTURA DE DADOS - JAVA, C#, PYTHON, C++
 
 ## FÍSICAS
-### Tipos de variáveis
+### Definem o tamanho da memória alocada → São dependentes de linguagem
+#### Tipos de variáveis
   * int,
   * double
   * float
   * char
   * boolean
-### Definem o tamanho da memória alocada
-  * São dependentes de linguagem
 
 ## ABSTRATAS (COLEÇÕES)
   ### Algoritmos de gestão de memória → <ins>**C.R.U.D**</ins> = <ins>**C**</ins>reate, <ins>**R**</ins>ead, <ins>**U**</ins>pdate, <ins>**D**</ins>elete
