@@ -54,46 +54,99 @@ foreach(var i in listaNomes) // Mostrando a lista
   * Capturar o valor do meio
 * Aplicar a moda
 
-### Em JAVA
-```java
-
-```
-
 ### Em C#
 ```c#
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Net.Mime;
 
-List<int> listaGlicemia = new List<int>(); // Criando lista para a glicemia
-Random gerador = new Random(); // Definindo gerador
+Console.WriteLine("GLICEMIA");
 
-int quantidade = gerador.Next(10,20); // Definindo quantidade aleatória entre 10 e 20
-for (int i = 0; i < quantidade; i++)
+Random random = new Random();
+//GERAR QUANTOS VALORES DE GLICEMIA SERAM GERADOS
+int ninteiro = random.Next(1, 15);
+Console.WriteLine("Número gerado: " + ninteiro);
+
+//GERAR VALORES DE GLICEMIA E ADICIONA-LOS NA LISTA numeros
+int glicemia;
+
+List<int> numeros = new List<int>();
+
+for (int i = 0; i < ninteiro; i++)
 {
-    listaGlicemia.Add(gerador.Next(50,240)); // Adicionar na lista números entre 50 e 240
+    glicemia = random.Next(50, 240);
+    numeros.Add(glicemia);
+    /* if (!numeros.Contains(glicemia))
+     {
+         numeros.Add(glicemia);
+     }*/
+
+}
+//MOSTRAR OS VALORES DE GLICEMIA
+foreach (var i in numeros)
+{
+    Console.WriteLine(i);
 }
 
-listaGlicemia.Sort(); // Ordenar a lista
-
-Console.WriteLine("*** Valores de glicemia ***");
-var item = listaGlicemia.GetEnumerator();
-while (item.MoveNext())
+//CALCULO DA MÉDIA
+double media, soma = 0;
+foreach (var i in numeros)  //percorre a lista
 {
-    int numero = item.Current;
-    Console.WriteLine(numero);
+    soma = soma + i;
+
+}
+media = soma / ninteiro;
+Console.WriteLine("MEDIA: " + media.ToString("N2"));
+
+//calculo da mediana
+double mediana;
+numeros.Sort();
+/*Console.WriteLine("A lista contem " + numeros.Count());
+foreach (var i in numeros)
+{
+    Console.WriteLine(i);
+}*/
+if (ninteiro % 2 == 0)
+{
+    int meio = ninteiro / 2;
+    int meio2 = ninteiro / 2 - 1;
+
+    mediana = (double)(numeros[meio] + numeros[meio2]) / 2;
+}
+else
+{
+    int meioo = ninteiro / 2;
+    mediana = (double)numeros[meioo];
+}
+Console.WriteLine("MEDIANA : " + mediana);
+
+//calculo da moda - zamberlan
+int valorAvaliado, ocorrenciaAvaliado, moda = 0, ocorrenciaModa = 0;
+foreach (var i in numeros)
+{
+    valorAvaliado = i;
+    ocorrenciaAvaliado = 0;
+    foreach (var j in numeros)
+    {
+        if (valorAvaliado == j)
+        {
+            ocorrenciaAvaliado++;
+        }
+
+    }
+    if (ocorrenciaAvaliado > ocorrenciaModa)
+    {
+        moda = valorAvaliado;
+        ocorrenciaModa = ocorrenciaAvaliado;
+    }
 }
 
-Console.WriteLine("\nA lista de glicemia contém: " +listaGlicemia.Count + " valores");
-
-// Media
-double soma = 0, media;
-foreach (int i in listaGlicemia)
+if (ocorrenciaModa > 1)
 {
-    soma += i;
+    Console.WriteLine("MODA = " + moda);
 }
-media = soma / quantidade;
-Console.WriteLine("A média de todas as glicemia é: "+media);
-
-// Mediana
+else
+{
+    Console.WriteLine("NÃO HÁ MODA");
+}
 ```
 
 ## 3) Fazer listas:
