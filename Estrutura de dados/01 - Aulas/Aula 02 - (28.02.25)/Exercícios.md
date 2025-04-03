@@ -5,11 +5,11 @@
   * O código deve permitir que o usuário digite um nome para pesquisa e o programa exclua esse nome da lista
   * Exiba novamente a lista
   
-1) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
-2) Qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
-3) O que são SGBD relacionais e SGBD não relacionais
+2) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
+3) Qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
+4) O que são SGBD relacionais e SGBD não relacionais
   
-## 1) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
+## 2) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
 ### ArrayList
 * Como funciona?
   * Internamente usa um array dinâmico
@@ -137,7 +137,7 @@ public class VectorExample {
 * Vector é sincronizado (thread-safe), então funciona bem em múltiplas threads
 * Possui as mesmas operações que ArrayList, mas é mais lento devido à sincronização
 
-## 2) Qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
+## 3) Qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
 * Banco de Dados
   * É um conjunto de informações organizadas e armazenadas para serem recuperadas e manipuladas
   * Pode ser um arquivo simples ou um sistema mais estruturado
@@ -147,7 +147,7 @@ public class VectorExample {
   * Permite criar, modificar, consultar e garantir a segurança dos dados
   * Exemplos: MySQL, PostgreSQL, Oracle, SQL Server, MongoDB
 
-## 3) O que são SGBD Relacionais e SGBD Não Relacionais?
+## 4) O que são SGBD Relacionais e SGBD Não Relacionais?
 * SGBD Relacionais (SQL)
   * Usam tabelas (linhas e colunas) para armazenar os dados
   * Seguem o modelo relacional e utilizam chaves primárias e estrangeiras
