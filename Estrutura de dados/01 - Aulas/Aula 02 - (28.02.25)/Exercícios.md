@@ -53,7 +53,7 @@ public class ArrayListExample {
 * Como funciona?
   * Internamente usa uma lista duplamente encadeada
   * Inserções e remoções são rápidas (O(1)) em qualquer posição, pois só ajusta os ponteiros dos nós
-* Acesso por índice é lento (O(n)), pois precisa percorrer a lista do início até o índice desejado
+  * Acesso por índice é lento (O(n)), pois precisa percorrer a lista do início até o índice desejado
   
 * Quando usar?
   * Quando há muitas inserções e remoções no meio da lista
