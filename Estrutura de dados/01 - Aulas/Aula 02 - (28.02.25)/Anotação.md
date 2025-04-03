@@ -91,8 +91,8 @@ Representam redes e relações complexas entre elementos.
  * IA e jogos (caminho mais curto entre pontos).
 
 ## 5. Observações sobre Remoção
-* remove() → Apaga somente a primeira ocorrência do elemento na estrutura.
-* removeAll() → Remove todas as ocorrências do elemento.
+* remove( ) → Apaga somente a primeira ocorrência do elemento na estrutura.
+* removeAll( ) → Remove todas as ocorrências do elemento.
 
 ## 6. Copilot e GitHub Education
 ### 6.1 Configuração do Copilot
