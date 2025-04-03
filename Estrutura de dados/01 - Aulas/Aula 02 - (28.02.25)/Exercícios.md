@@ -3,8 +3,6 @@
 2) Qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
 3) O que são SGBD relacionais e SGBD não relacionais
 
----
-
 ## 1) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
 ### ArrayList
 * Como funciona?
