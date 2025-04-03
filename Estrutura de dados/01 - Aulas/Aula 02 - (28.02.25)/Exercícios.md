@@ -1,13 +1,9 @@
 # Exercícios
-1) Baseado no código anterior (lista de Integer), construir um programa em Java que receba , via teclado do usuário, n nomes de pessoas. Assim como o primeiro código:
+## 1) Baseado no código anterior (lista de Integer), construir um programa em Java que receba , via teclado do usuário, n nomes de pessoas. Assim como o primeiro código:
   * Não poderá gaver nomes duplicados
   * Ao final do cadastro, a lista precisará ser ordenada;
   * O código deve permitir que o usuário digite um nome para pesquisa e o programa exclua esse nome da lista
   * Exiba novamente a lista
-  
-2) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
-3) Qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
-4) O que são SGBD relacionais e SGBD não relacionais
   
 ## 2) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
 ### ArrayList
