@@ -51,7 +51,72 @@ foreach(var i in listaNomes) // Mostrando a lista
 
 ### Em JAVA
 ```java
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
+public class Glicemia {
+    public static void main(String[] args) {
+        Random gerador = new Random();
+
+        // Gerando o tamanho da lista entre 10 e 20
+        int tamanho = gerador.nextInt(10,21); // Lembra de colocar sempre +1 no final
+        System.out.println("O tamanho da lista de glicemia: " + tamanho);
+        
+        List<Integer> listaGlicemia = new ArrayList<>();
+
+        // Gerando valores de glicemia aleatórios de 50 e 240
+        for (int i=0; i<tamanho; i++) {
+            listaGlicemia.add(gerador.nextInt(50,241)); // Lembra de colocar sempre +1 no final
+        }
+        
+        listaGlicemia.sort(null);
+
+        // Exibindo valores gerados
+        System.out.println("Valores gerados: " + listaGlicemia);
+
+        // Calcular media
+        double soma = 0;
+        for (int numero : listaGlicemia) {
+            soma += numero; // Calculo da soma
+        }
+        double media = soma / tamanho; // Usaria (media = soma / listaGlicemia.size()) caso o tamanho da lista fosse dita pelo usuario
+        System.out.println("MEDIA: " + media);
+
+        // Calcular mediana
+       double mediana;
+       if (tamanho % 2 == 0) {
+        int meio = tamanho / 2;
+        int meio2 = tamanho / 2 - 1;
+        mediana = (listaGlicemia.get(meio) + listaGlicemia.get(meio2)) / 2.0; // Se for par pega os dois valores do meio, soma e divide por 2.0(double)
+       } else {
+        mediana = listaGlicemia.get(tamanho / 2); // Se for impar pega o valor exato do meio
+       }
+       System.out.println("MEDIANA: " +mediana);
+
+       // Calcular moda
+       int moda = 0, ocorrenciaModa = 0;
+       for (int valorAvaliado : listaGlicemia) { // Escolhe um valor na lista para ser avaliado
+        int ocorrenciaAvaliado = 0; // Para contar quantas vezes o valorAvaliado aparece
+        for (int num : listaGlicemia) { // Conta quantas vezes esse unemro aparece na lista
+            if (valorAvaliado == num) {
+                ocorrenciaAvaliado++; // ++ se encontra o mesmo número
+            }
+        }
+        if (ocorrenciaAvaliado > ocorrenciaModa) { // Se ocorrenciaAvaliado for maior do que a ocorrenciaModa atual
+            moda = valorAvaliado; // Atualiza moda para valorAvaliado
+            ocorrenciaModa = ocorrenciaAvaliado; // Atualiza ocorrenciaModa para ocorrenciaAvaliado
+        }
+       }
+        
+       if (ocorrenciaModa > 1) {
+        System.out.println("MODA: " + moda);
+       } else {
+        System.out.println("NAO HA MODA");
+       }
+
+    }
+}
 ```
 
 ### Em C#
