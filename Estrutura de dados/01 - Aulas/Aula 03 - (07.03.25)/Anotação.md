@@ -1,6 +1,5 @@
 # Aula com exercícios
-## Relembrando
-### Java
+## Relembrando - JAVA
 #### LISTA
   * Inserir
   * add
