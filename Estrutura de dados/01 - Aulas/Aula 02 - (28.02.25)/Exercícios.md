@@ -1,7 +1,7 @@
 # Exercícios
 ## 1) Baseado no código anterior (lista de Integer), construir um programa em Java que receba , via teclado do usuário, n nomes de pessoas.
 * Assim como o primeiro código:
-  * Não poderá gaver nomes duplicados
+  * Não poderá haver nomes duplicados
   * Ao final do cadastro, a lista precisará ser ordenada;
   * O código deve permitir que o usuário digite um nome para pesquisa e o programa exclua esse nome da lista
   * Exiba novamente a lista
