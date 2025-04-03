@@ -5,7 +5,61 @@
   * Ao final do cadastro, a lista precisará ser ordenada;
   * O código deve permitir que o usuário digite um nome para pesquisa e o programa exclua esse nome da lista
   * Exiba novamente a lista
-  
+```java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ListaNomes{
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        ArrayList<String> listaNomes = new ArrayList<>();
+
+        int quantidade;
+        String nome, excluir;
+
+        System.out.print("Informe a quantidade de nomes que voce deseja na lista: ");
+        quantidade = teclado.nextInt();
+        teclado.nextLine();
+
+        for(int i=0; i<quantidade; i++) {
+            System.out.print("Digite o nome " + (i+1) + ": ");
+            nome = teclado.nextLine().toUpperCase();
+            if(!listaNomes.contains(nome)){
+                listaNomes.add(nome);
+            } else {
+                System.out.println("Nome ja cadastrado!");
+                i--;
+            }
+        }
+
+        listaNomes.sort(null);
+        
+        System.out.println("\nLista ordenada:");
+        for (String nomes : listaNomes) {
+            System.out.println(nomes);
+        }
+
+        System.out.print("\nDigite um nome para excluir: ");
+        excluir = teclado.nextLine().toUpperCase();
+
+        if (listaNomes.remove(excluir)) {
+            System.out.println("\nNome " + excluir + " removido com sucesso\n");
+        } else {
+            System.out.println("\nNome nao encontrado na lista\n");
+        }
+
+        System.out.println("Lista final:");
+        for (String nomes : listaNomes) {
+            System.out.println(nomes);
+        }
+
+        teclado.close();
+    }
+}
+```
+
+
 ## 2) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
 ### ArrayList
 * Como funciona?
