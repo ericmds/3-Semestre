@@ -100,3 +100,158 @@ Para ativar o Copilot na conta do GitHub Education:
  1) Usar o e-mail acadêmico (UFN).
  2) No GitHub Education, cadastrar-se com usuário e senha.
  3) Vincular o GitHub Copilot à conta.
+
+## Código 1: Usando Iterator
+```java
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Random;
+
+public class ListaIterator {
+    public static void main(String[] args) {
+        ArrayList<Integer> lista = new ArrayList<>();
+        Random gerador = new Random();
+
+        // Populando a lista
+        for (int i = 0; i < 10; i++) {
+            lista.add(gerador.nextInt(50)); // Números de 0 a 49
+        }
+
+        lista.sort(null); // Ordena a lista
+
+        // Exibir
+        System.out.println("Exibindo com Iterator:");
+        Iterator<Integer> iterator = lista.iterator();
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
+        System.out.println();
+
+        // Modificar ímpares para -1
+        ListIterator<Integer> listIterator = lista.listIterator();
+        while (listIterator.hasNext()) {
+            if (listIterator.next() % 2 != 0) {
+                listIterator.set(-1);
+            }
+        }
+
+        // Remover números menores que 25
+        iterator = lista.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next() < 25) {
+                iterator.remove();
+            }
+        }
+
+        // Exibir após modificações
+        System.out.println("Lista após modificações com Iterator:");
+        for (Integer num : lista) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+```
+
+## Código 2: Usando Índices
+```java
+import java.util.ArrayList;
+import java.util.Random;
+
+public class ListaIndice {
+    public static void main(String[] args) {
+        ArrayList<Integer> lista = new ArrayList<>();
+        Random gerador = new Random();
+
+        // Populando a lista
+        for (int i = 0; i < 10; i++) {
+            lista.add(gerador.nextInt(50)); // Números de 0 a 49
+        }
+
+        lista.sort(null); // Ordena a lista
+
+        // Exibir
+        System.out.println("Exibindo com Índices:");
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.print(lista.get(i) + " ");
+        }
+        System.out.println();
+
+        // Modificar ímpares para -1
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i) % 2 != 0) {
+                lista.set(i, -1);
+            }
+        }
+
+        // Remover números menores que 25 (de trás para frente)
+        for (int i = lista.size() - 1; i >= 0; i--) {
+            if (lista.get(i) < 25) {
+                lista.remove(i);
+            }
+        }
+
+        // Exibir após modificações
+        System.out.println("Lista após modificações com Índices:");
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.print(lista.get(i) + " ");
+        }
+        System.out.println();
+    }
+}
+```
+
+## Código 3: Usando Objeto (For-each)
+```java
+import java.util.ArrayList;
+import java.util.Random;
+
+public class ListaObjeto {
+    public static void main(String[] args) {
+        ArrayList<Integer> lista = new ArrayList<>();
+        Random gerador = new Random();
+
+        // Populando a lista
+        for (int i = 0; i < 10; i++) {
+            lista.add(gerador.nextInt(50)); // Números de 0 a 49
+        }
+
+        lista.sort(null); // Ordena a lista
+
+        // Exibir
+        System.out.println("Exibindo com Objeto (for-each):");
+        for (Integer num : lista) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // Tentativa de Modificar (não funciona)
+        System.out.println("Tentando modificar ímpares para -1 com Objeto (não funciona):");
+        for (Integer num : lista) {
+            if (num % 2 != 0) {
+                num = -1; // Não altera a lista original
+            }
+        }
+
+        // Tentativa de Remover (gera erro)
+        System.out.println("Tentando remover números < 25 com Objeto (for-each, erro esperado):");
+        try {
+            for (Integer num : lista) {
+                if (num < 25) {
+                    lista.remove(num); // Isso gera erro!
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Erro: ConcurrentModificationException!");
+        }
+
+        // Exibir após tentativas de modificação (lista continua igual)
+        System.out.println("Lista após tentativas com Objeto:");
+        for (Integer num : lista) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+```
