@@ -1,9 +1,9 @@
 # Exercícios
 1) Baseado no código anterior (lista de Integer), construir um programa em Java que receba , via teclado do usuário, n nomes de pessoas. Assim como o primeiro código:
-i) Não poderá gaver nomes duplicados
-ii) Ao final do cadastro, a lista precisará ser ordenada;
-iii) O código deve permitir que o usuário digite um nome para pesquisa e o programa exclua esse nome da lista
-iv) Exiba novamente a lista
+  i) Não poderá gaver nomes duplicados
+  ii) Ao final do cadastro, a lista precisará ser ordenada;
+  iii) O código deve permitir que o usuário digite um nome para pesquisa e o programa exclua esse nome da lista
+  iv) Exiba novamente a lista
 
 1) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
 2) Qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
