@@ -7,11 +7,6 @@
 * Mostrar a quantidade de números cadastrados
 * Dar a opção para continuar ou encerrrar
 
-### Em JAVA
-```java
-
-```
-
 ### Em C#
 ```c#
 List<string> listaNomes = new List<string>(); // Criar lista
@@ -53,6 +48,11 @@ foreach(var i in listaNomes) // Mostrando a lista
   * Ordenar
   * Capturar o valor do meio
 * Aplicar a moda
+
+### Em JAVA
+```java
+
+```
 
 ### Em C#
 ```c#
