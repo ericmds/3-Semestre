@@ -1,51 +1,51 @@
 # ESTRUTURA DE DADOS - JAVA, C#, PYTHON, C++
 
-# FÍSICAS
+## FÍSICAS
 * Tipos de variáveis
   * int, double, float, char, boolean
 * Definem o tamanho da memória alocada
   * São dependentes de linguagem
 
-# ABSTRATAS (COLEÇÕES)
-  ## Algoritmos de gestão de memória → <ins>**C.R.U.D**</ins> = <ins>**C**</ins>reate, <ins>**R**</ins>ead, <ins>**U**</ins>pdate, <ins>**D**</ins>elete
-  ### Inserção
+## ABSTRATAS (COLEÇÕES)
+  ### Algoritmos de gestão de memória → <ins>**C.R.U.D**</ins> = <ins>**C**</ins>reate, <ins>**R**</ins>ead, <ins>**U**</ins>pdate, <ins>**D**</ins>elete
+  #### Inserção
   * add
   * Add
   * append
   * push_back__
     
-  ### PERCURSO
+  #### PERCURSO
   * Exibir
   * System.out.print
   * Console.print
   * print
     
-  ### Contar/Definir tamanho
+  #### Contar/Definir tamanho
   * size
   * Count
   * len
   * size
     
-  ### Localizar
+  #### Localizar
   * contains
   * Contains
   * in
     
-  ### Remover
+  #### Remover
   * delete
   * Delete
   * delete
   * delete
 
-# LINEARES
- ## LISTAS → Todas as operações, armazena e exibe, "relatórios"
+## LINEARES
+ ### LISTAS → Todas as operações, armazena e exibe, "relatórios"
   * ArrayList
   * List []
   * Vector
    
- ## PILHAS
- ## FILAS
+ ### PILHAS
+ ### FILAS
 
-# NÃO LINEARES
- ## ÁRVORES
- ## GRAFOS
+## NÃO LINEARES
+ ### ÁRVORES
+ ### GRAFOS
