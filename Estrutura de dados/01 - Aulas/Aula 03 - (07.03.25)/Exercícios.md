@@ -6,7 +6,14 @@
 * Verificar se não existe nomes repitidos, se houver, mostar uma mensagem de erro
 * Mostrar a quantidade de números cadastrados
 * Dar a opção para continuar ou encerrrar
-```C#
+
+### Em Java
+```java
+
+```
+
+### Em C#
+```c#
 
 ```
 
@@ -16,6 +23,13 @@
   * Ordenar
   * Capturar o valor do meio
 * Aplicar a moda
+
+### Em C#
+```c#
+
+```
+
+### Em java
 ```java
 
 ```
@@ -31,6 +45,14 @@
   * sem repetidos
 * Lista 3
   * números comuns nas duas listas
-``java
+
+### Em java
+```java
+
+```
+
+
+### Em C#
+``c#
 
 ```
