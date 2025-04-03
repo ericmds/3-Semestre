@@ -6,52 +6,13 @@
 ---
 
 ## 1) Descobrir a diferença em java de Vector, ArrayList e LinkedList e construir exemplos
-As três classes fazem parte da Java Collection Framework e são usadas para armazenar e manipular listas de elementos, mas há diferenças importantes entre elas:
-
-* Vector
-  * Implementado com um array dinâmico.
-  * Thread-safe, ou seja, sincronizado (métodos synchronized), o que pode tornar o desempenho mais lento em comparação com ArrayList.
-  * Cresce automaticamente dobrando seu tamanho quando necessário.
-
-* ArrayList
-  * Também baseado em um array dinâmico, mas não é sincronizado.
-  * Melhor desempenho que Vector em ambientes single-thread.
-  * Quando precisa crescer, aumenta seu tamanho em 50%.
-
-* LinkedList
-  * Implementado como uma lista duplamente encadeada.
-  * Operações de inserção e remoção são mais eficientes que ArrayList em listas grandes, pois não precisa realocar memória.
-  * Acesso aos elementos é mais lento em comparação com ArrayList, pois precisa percorrer os nós da lista.
-
-Exemplo
-```java
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
-
-public class CollectionExample {
-    public static void main(String[] args) {
-        // Usando ArrayList
-        List<String> arrayList = new ArrayList<>();
-        arrayList.add("A");
-        arrayList.add("B");
-        arrayList.add("C");
-        System.out.println("ArrayList: " + arrayList);
-
-        // Usando Vector
-        List<String> vector = new Vector<>();
-        vector.add("X");
-        vector.add("Y");
-        vector.add("Z");
-        System.out.println("Vector: " + vector);
-
-        // Usando LinkedList
-        List<String> linkedList = new LinkedList<>();
-        linkedList.add("1");
-        linkedList.add("2");
-        linkedList.add("3");
-        System.out.println("LinkedList: " + linkedList);
-    }
-}
-```
+### ArrayList
+* Como funciona?
+ * Internamente usa um array dinâmico.
+ * Acesso rápido por índice (O(1)) porque os elementos ficam em posições contíguas na memória.
+ * Inserções e remoções no fim são rápidas (O(1)).
+ * Inserções e remoções no meio são lentas (O(n)), pois exige deslocamento dos elementos.
+* Quando usar?
+ * Quando há muitas operações de leitura (busca por índice).
+ * Quando as inserções/remoções forem sempre no final da lista.
+ * Exemplo: Lista de produtos em um carrinho de compras.
