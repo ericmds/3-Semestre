@@ -101,157 +101,274 @@ Para ativar o Copilot na conta do GitHub Education:
  2) No GitHub Education, cadastrar-se com usuário e senha.
  3) Vincular o GitHub Copilot à conta.
 
-## Código 1: Usando Iterator
+## Código feito em aula
 ```java
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.ListIterator;
 import java.util.Random;
 
-public class ListaIterator {
+public class Lista{
     public static void main(String[] args) {
+       
+        // Código que popula uma lista com n números aleatórios inteiros
         ArrayList<Integer> lista = new ArrayList<>();
-        Random gerador = new Random();
 
-        // Populando a lista
-        for (int i = 0; i < 10; i++) {
-            lista.add(gerador.nextInt(50)); // Números de 0 a 49
+        Random gerador = new Random();
+        int tamanho = gerador.nextInt(10, 15);
+        int numero;
+
+        // Metodo inserir
+        for (int i=0; i<tamanho; i++){
+            numero = gerador.nextInt(50); // Gerando números de 0 até 999
+            if(!lista.contains(numero)){ // Controlar duplicados
+                lista.add(numero);
+            }
         }
 
-        lista.sort(null); // Ordena a lista
+        //  Ordenar
+        lista.sort(null);
 
-        // Exibir
-        System.out.println("Exibindo com Iterator:");
+        // Metodo exibir
+    
+        // Exibindo por índices
+        /*System.out.println("Exibindo por índices");;
+        for(int i=0; i < lista.size(); i++){
+            System.out.println(lista.get(i));
+        }*/
+
+        // Exibindo por objetos
+        System.out.println("Exibindo por objetos");
+        System.out.println("Total de "+lista.size()); // Mostrar total
+        for(Integer i: lista){
+            System.out.println(i);
+        }
+        
+        // Apagar um número
+        numero = 15;
+        if (lista.remove((Integer)15)){
+            System.out.println("Número localizado e excluido");
+        } else{
+            System.out.println("Numero nao localizado");
+        }
+
+        /*System.out.println("Lista de inteiros usando Iterator");
         Iterator<Integer> iterator = lista.iterator();
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next() + " ");
-        }
-        System.out.println();
+        while (iterator.hasNext()){
+            numero = iterator.next();
+            System.out.println(numero);
+        }*/
 
-        // Modificar ímpares para -1
-        ListIterator<Integer> listIterator = lista.listIterator();
-        while (listIterator.hasNext()) {
-            if (listIterator.next() % 2 != 0) {
-                listIterator.set(-1);
-            }
-        }
-
-        // Remover números menores que 25
-        iterator = lista.iterator();
-        while (iterator.hasNext()) {
-            if (iterator.next() < 25) {
-                iterator.remove();
-            }
-        }
-
-        // Exibir após modificações
-        System.out.println("Lista após modificações com Iterator:");
-        for (Integer num : lista) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-    }
-}
-```
-
-## Código 2: Usando Índices
-```java
-import java.util.ArrayList;
-import java.util.Random;
-
-public class ListaIndice {
-    public static void main(String[] args) {
-        ArrayList<Integer> lista = new ArrayList<>();
-        Random gerador = new Random();
-
-        // Populando a lista
-        for (int i = 0; i < 10; i++) {
-            lista.add(gerador.nextInt(50)); // Números de 0 a 49
-        }
-
-        lista.sort(null); // Ordena a lista
-
-        // Exibir
-        System.out.println("Exibindo com Índices:");
-        for (int i = 0; i < lista.size(); i++) {
-            System.out.print(lista.get(i) + " ");
-        }
-        System.out.println();
-
-        // Modificar ímpares para -1
+        // PERCORRER VIA INDICE
         for (int i = 0; i < lista.size(); i++) {
             if (lista.get(i) % 2 != 0) {
-                lista.set(i, -1);
+                lista.set(i,-1);
             }
         }
-
-        // Remover números menores que 25 (de trás para frente)
-        for (int i = lista.size() - 1; i >= 0; i--) {
-            if (lista.get(i) < 25) {
-                lista.remove(i);
-            }
+        System.out.println("Exibindo por objetos");
+        System.out.println("Total de "+lista.size()); // Mostrar total
+        for(Integer i: lista){
+            System.out.println(i);
         }
-
-        // Exibir após modificações
-        System.out.println("Lista após modificações com Índices:");
-        for (int i = 0; i < lista.size(); i++) {
-            System.out.print(lista.get(i) + " ");
-        }
-        System.out.println();
+        
+        // PERCORRER VIA OBJETO
+        //for (Integer i: lista){
+        //   if (i % 2 != 0){
+        //        i = -1;
+        //    }
+        //}
     }
 }
 ```
 
-## Código 3: Usando Objeto (For-each)
+## Código Separado 1: Utilizando objetos
 ```java
 import java.util.ArrayList;
 import java.util.Random;
 
 public class ListaObjeto {
     public static void main(String[] args) {
+
+        // Criando uma lista dinâmica para armazenar números inteiros
         ArrayList<Integer> lista = new ArrayList<>();
         Random gerador = new Random();
 
-        // Populando a lista
-        for (int i = 0; i < 10; i++) {
-            lista.add(gerador.nextInt(50)); // Números de 0 a 49
+        // Definindo um tamanho aleatório entre 10 e 15 para a lista
+        int tamanho = gerador.nextInt(10, 15);
+
+        // Populando a lista sem elementos duplicados
+        while (lista.size() < tamanho) { // Usa while para garantir o tamanho correto
+            int numero = gerador.nextInt(50); // Gera número entre 0 e 49
+            if (!lista.contains(numero)) { // Evita duplicados
+                lista.add(numero);
+            }
         }
 
-        lista.sort(null); // Ordena a lista
+        // Ordenando a lista
+        lista.sort(null);
 
-        // Exibir
-        System.out.println("Exibindo com Objeto (for-each):");
-        for (Integer num : lista) {
-            System.out.print(num + " ");
+        // Exibindo os números usando for-each (por objetos)
+        System.out.println("Exibindo por objetos:");
+        System.out.println("Total de " + lista.size());
+        for (Integer i : lista) {
+            System.out.println(i);
         }
-        System.out.println();
 
-        // Tentativa de Modificar (não funciona)
-        System.out.println("Tentando modificar ímpares para -1 com Objeto (não funciona):");
-        for (Integer num : lista) {
+        // Removendo um número da lista
+        if (lista.remove((Integer) 15)) {
+            System.out.println("Número localizado e excluído");
+        } else {
+            System.out.println("Número não localizado");
+        }
+
+        // Criando uma nova lista para substituir números ímpares por -1
+        ArrayList<Integer> listaAtualizada = new ArrayList<>();
+        for (Integer i : lista) {
+            if (i % 2 != 0) {
+                listaAtualizada.add(-1); // Substitui os ímpares por -1
+            } else {
+                listaAtualizada.add(i);
+            }
+        }
+
+        // Atualizando a lista original
+        lista = listaAtualizada;
+
+        // Exibindo a lista após a substituição
+        System.out.println("Exibindo por objetos após modificação:");
+        System.out.println("Total de " + lista.size());
+        for (Integer i : lista) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+## Código Separado 2: Utilizando Iterators
+```java
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Random;
+
+public class ListaIterator {
+    public static void main(String[] args) {
+
+        // Criando uma lista dinâmica para armazenar números inteiros
+        ArrayList<Integer> lista = new ArrayList<>();
+        Random gerador = new Random();
+        
+        // Definindo um tamanho aleatório entre 10 e 15 para a lista
+        int tamanho = gerador.nextInt(10, 15);
+
+        // Populando a lista sem duplicatas
+        while (lista.size() < tamanho) {
+            int numero = gerador.nextInt(50);
+            if (!lista.contains(numero)) {
+                lista.add(numero);
+            }
+        }
+
+        // Ordenando a lista
+        lista.sort(null);
+
+        // Exibindo os números usando Iterator
+        System.out.println("Exibindo por Iterator:");
+        System.out.println("Total de " + lista.size());
+        Iterator<Integer> iterator = lista.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        // Removendo um número específico da lista
+        iterator = lista.iterator(); // Criando um novo iterator para remoção
+        while (iterator.hasNext()) {
+            if (iterator.next().equals(15)) { // Verifica se o número é 15
+                iterator.remove(); // Remove o número da lista
+                System.out.println("Número localizado e excluído");
+                break;
+            }
+        }
+
+        // Substituindo números ímpares por -1 usando Iterator
+        iterator = lista.iterator(); // Criando um novo iterator para modificação
+        ArrayList<Integer> novaLista = new ArrayList<>();
+        while (iterator.hasNext()) {
+            int num = iterator.next();
             if (num % 2 != 0) {
-                num = -1; // Não altera a lista original
+                novaLista.add(-1);
+            } else {
+                novaLista.add(num);
+            }
+        }
+        
+        // Atualizando a lista original
+        lista = novaLista;
+
+        // Exibindo a lista após substituição
+        System.out.println("Exibindo por Iterator após modificação:");
+        System.out.println("Total de " + lista.size());
+        iterator = lista.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+}
+```
+
+## Código Separado 3: Utilizando índices (for tradicional)
+```java
+import java.util.ArrayList;
+import java.util.Random;
+
+public class ListaIndice {
+    public static void main(String[] args) {
+
+        // Criando uma lista dinâmica para armazenar números inteiros
+        ArrayList<Integer> lista = new ArrayList<>();
+        Random gerador = new Random();
+        
+        // Definindo um tamanho aleatório entre 10 e 15 para a lista
+        int tamanho = gerador.nextInt(10, 15);
+
+        // Populando a lista sem duplicatas
+        while (lista.size() < tamanho) {
+            int numero = gerador.nextInt(50);
+            if (!lista.contains(numero)) {
+                lista.add(numero);
             }
         }
 
-        // Tentativa de Remover (gera erro)
-        System.out.println("Tentando remover números < 25 com Objeto (for-each, erro esperado):");
-        try {
-            for (Integer num : lista) {
-                if (num < 25) {
-                    lista.remove(num); // Isso gera erro!
-                }
-            }
-        } catch (Exception e) {
-            System.out.println("Erro: ConcurrentModificationException!");
+        // Ordenando a lista
+        lista.sort(null);
+
+        // Exibindo os números usando índice
+        System.out.println("Exibindo por índice:");
+        System.out.println("Total de " + lista.size());
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println(lista.get(i));
         }
 
-        // Exibir após tentativas de modificação (lista continua igual)
-        System.out.println("Lista após tentativas com Objeto:");
-        for (Integer num : lista) {
-            System.out.print(num + " ");
+        // Removendo um número específico da lista
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i) == 15) { // Verifica se o número é 15
+                lista.remove(i); // Remove o número
+                System.out.println("Número localizado e excluído");
+                break; // Evita erro ao modificar a lista durante a iteração
+            }
         }
-        System.out.println();
+
+        // Substituindo números ímpares por -1 usando índice
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i) % 2 != 0) {
+                lista.set(i, -1); // Modifica diretamente na posição correta
+            }
+        }
+
+        // Exibindo a lista após substituição
+        System.out.println("Exibindo por índice após modificação:");
+        System.out.println("Total de " + lista.size());
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println(lista.get(i));
+        }
     }
 }
 ```
