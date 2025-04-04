@@ -228,7 +228,55 @@ else
 
 ### Em JAVA
 ```java
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
 
+public class Valores {
+    public static void main(String[] args) {
+        int n  = 10; // Defina o tamanho das listas
+        
+         // Criando dois conjuntos (Set) para armazenar números únicos
+         Set<Integer> set1 = new HashSet<>();
+         Set<Integer> set2 = new HashSet<>();
+         Random gerador = new Random(); // Objeto para gerar números aleatórios
+
+        // Preenche set1 com números aleatórios únicos de 0 a 100
+        while (set1.size() < n) {
+            set1.add(gerador.nextInt(101));
+        }
+        
+        // Preenche set2 com números aleatórios únicos de 0 a 100
+        while (set2.size() < n) {
+            set2.add(gerador.nextInt(101));
+        }
+        
+        // Converte os conjuntos para listas para facilitar a manipulação e exibição
+        List<Integer> lista1 = new ArrayList<>(set1);
+        List<Integer> lista2 = new ArrayList<>(set2);
+        List<Integer> lista3 = new ArrayList<>();
+
+        // Percorre lista1 e verifica quais elementos também estão em lista2
+        for (int num : lista1) {
+            if (lista2.contains(num)) { // Se o número estiver em ambas as listas, adiciona a lista3
+                lista3.add(num);
+            } 
+        }
+
+        // Exibe as listas geradas no console
+        System.out.println("Lista 1: " + lista1);
+        System.out.println("Lista 2: " + lista2);
+        
+        // Verifica se lista3 está vazia e exibe um aviso caso não haja números em comum
+        if (lista3.isEmpty()) {
+            System.out.println("Lista 3: [A lista 1 e 2 nao possuem numeros em comum]");
+        } else {
+            System.out.println("Lista 3: " + lista3);
+        }
+    }
+}
 ```
 
 
