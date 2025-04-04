@@ -32,3 +32,12 @@ Disciplina de estruturas de dados da UFN, contendo códigos dos programas e mét
     * aplicações: técnicas de IA para escolher o melhor caminho
  
 ---
+## 1) Explique e exemplifique os papéis de Listas, Pilhas, Filas, Árvores e Grafos em Ciência da Computação.
+#### Listas: São estruturas de dados lineares utilizadas para armazenar e manipular coleções de elementos. Seu uso é indicado quando há necessidade de inserção, remoção e acesso sequencial de elementos. Exemplos incluem listas de contatos e histórico de navegação.
+
+
+## 2) Qual a diferença de List, ArrayList e LinkedList nas linguagens Java e C#?
+
+## 3) Melhor utilização de listas: com dados primitivos, outras listas, dicionários ou objetos?
+
+## 4) Controle de duplicados em listas de objetos
