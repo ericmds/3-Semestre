@@ -4,9 +4,9 @@
 * Determinam a organização e o acesso aos dados, influenciando o desempenho dos algoritmos.
 * Dependem da implementação e da arquitetura do computador.
 
-###Exemplos de Estruturas Físicas
+### Exemplos de Estruturas Físicas
 
-####Array (Vetores e Matrizes)
+#### Array (Vetores e Matrizes)
 * Estrutura linear e estática, armazena elementos do mesmo tipo em posições consecutivas de memória.
 * Acesso rápido por índice, mas custo alto para inserção/remoção no meio.
 * Exemplo:
@@ -60,7 +60,7 @@ System.out.println(mapa.get("João")); // Saída: 25
 
 ### Exemplos de Estruturas Abstratas
 
-####List (Lista)
+#### List (Lista)
 * Coleção ordenada de elementos.
 * Permite inserções, remoções e buscas por posição.
 * Pode ser implementada com arrays (ArrayList) ou listas encadeadas (LinkedList).
@@ -164,7 +164,7 @@ public class ExemploRandom {
   * Compiladores (análise sintática).
 
 ## ArrayList vs. LinkedList
-###ArrayList
+### ArrayList
 * Implementação baseada em array dinâmico.
 * Acesso rápido por índice (O(1)).
 * Inserção e remoção lentas no meio.
