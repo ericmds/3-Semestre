@@ -40,7 +40,7 @@ Disciplina de estruturas de dados da UFN, contendo códigos dos programas e mét
 #### Grafos: Modelam relacionamentos complexos, como redes de transporte, redes sociais e circuitos eletrônicos. São compostos por vértices (nós) e arestas (ligações).
 
 ## 2) Qual a diferença de List, ArrayList e LinkedList nas linguagens Java e C#?
-###List (Interface em Java e Classe em C#):
+### List (Interface em Java e Classe em C#):
 #### Em Java, List é uma interface que define o comportamento de coleções ordenadas, sendo implementada por classes como ArrayList e LinkedList.
 #### Em C#, List<T> é uma classe genérica da biblioteca System.Collections.Generic, baseada em arrays dinâmicos.
 
