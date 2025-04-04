@@ -189,7 +189,15 @@ public class GerenciadorCidades {
                     System.out.print("Digite o nome da cidade: ");
                     String nome = scanner.nextLine().toUpperCase();
                     
-                    if (cidades.stream().anyMatch(c -> c.getNome().equals(nome))) {
+                    boolean existe = false;
+                    for (Cidade c : cidades) {
+                        if (c.getNome().equals(nome)) {
+                            existe = true;
+                            break;
+                        }
+                    }
+                    
+                    if (existe) {
                         System.out.println("Cidade já cadastrada!");
                     } else {
                         System.out.print("Digite a sigla do estado: ");
@@ -200,7 +208,6 @@ public class GerenciadorCidades {
                     break;
                 
                 case 2:
-                    cidades.sort(Comparator.comparing(Cidade::getNome)); // Ordenação pelo nome
                     System.out.println("\nCidades cadastradas:");
                     for (Cidade cidade : cidades) {
                         System.out.println(cidade.getNome() + " - " + cidade.getSiglaEstado());
@@ -211,14 +218,16 @@ public class GerenciadorCidades {
                     System.out.print("Digite o nome da cidade a pesquisar: ");
                     String pesquisa = scanner.nextLine().toUpperCase();
                     
-                    Cidade cidadeEncontrada = cidades.stream()
-                        .filter(c -> c.getNome().equals(pesquisa))
-                        .findFirst()
-                        .orElse(null);
+                    boolean encontrada = false;
+                    for (Cidade c : cidades) {
+                        if (c.getNome().equals(pesquisa)) {
+                            System.out.println("Estado: " + c.getSiglaEstado());
+                            encontrada = true;
+                            break;
+                        }
+                    }
                     
-                    if (cidadeEncontrada != null) {
-                        System.out.println("Estado: " + cidadeEncontrada.getSiglaEstado());
-                    } else {
+                    if (!encontrada) {
                         System.out.println("Cidade não encontrada.");
                     }
                     break;
@@ -227,9 +236,17 @@ public class GerenciadorCidades {
                     System.out.print("Digite o nome da cidade a remover: ");
                     String remover = scanner.nextLine().toUpperCase();
                     
-                    if (cidades.removeIf(c -> c.getNome().equals(remover))) {
-                        System.out.println("Cidade removida com sucesso!");
-                    } else {
+                    boolean removida = false;
+                    for (int i = 0; i < cidades.size(); i++) {
+                        if (cidades.get(i).getNome().equals(remover)) {
+                            cidades.remove(i);
+                            removida = true;
+                            System.out.println("Cidade removida com sucesso!");
+                            break;
+                        }
+                    }
+                    
+                    if (!removida) {
                         System.out.println("Cidade não encontrada.");
                     }
                     break;
@@ -245,5 +262,4 @@ public class GerenciadorCidades {
         }
     }
 }
-
 ```
