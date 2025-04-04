@@ -9,7 +9,7 @@
 #### Array (Vetores e Matrizes)
 * Estrutura linear e estática, armazena elementos do mesmo tipo em posições consecutivas de memória.
 * Acesso rápido por índice, mas custo alto para inserção/remoção no meio.
-* Exemplo:
+Exemplo:
 ```java
 int[] numeros = {1, 2, 3, 4, 5};
 System.out.println(numeros[2]); // Saída: 3
