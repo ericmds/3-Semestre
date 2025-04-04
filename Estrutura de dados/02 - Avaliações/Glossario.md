@@ -65,3 +65,15 @@ Justificativa: O uso de listas de objetos é a melhor escolha porque permite mai
 A duplicidade pode ser controlada de três formas:
 * Usando Set (como HashSet) em vez de List.
 * Verificando a existência do objeto antes da inserção na lista.
+
+## 5) Em sua linguagem de preferência, crie um programa (usando funções/métodos) que:
+* preencha N nomes de equipes de futebol, obrigatóriamente em maiúsculo. Esses nomes devem ser armazenados em uma estrutura adequada que se possa controlar duplicados e receber ordenação.
+* exiba os nomes das equipes cadastradas (de forma ordenada)
+* exiba a quantidade de equipes cadastradas
+  
+## 6) Em sua linguagem de preferência, crie um programa que manipule objetos cidades baseados na classe Cidade, contendo, nome da cidade e sigla do estado do Brasil. O controle de duplicidade deve ser via o nome da cidade. O programa deve apresentar um pequeno Menu, em que o usuário possa:
+* cadastrar uma cidade em lista de cidades: nome completo em maiúsculo e a sigla em maiúsculo
+* listar as cidades cadastradas tendo como ordem de ordenação os nomes das cidades
+* pesquisar uma cidade por seu nome e mostrar o seu estado respectivo (no caso, sigla)
+* remover uma cidade, pesquisando-a por seu nome
+* finalizar o programa
