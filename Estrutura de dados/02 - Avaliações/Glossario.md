@@ -70,10 +70,180 @@ A duplicidade pode ser controlada de três formas:
 * preencha N nomes de equipes de futebol, obrigatóriamente em maiúsculo. Esses nomes devem ser armazenados em uma estrutura adequada que se possa controlar duplicados e receber ordenação.
 * exiba os nomes das equipes cadastradas (de forma ordenada)
 * exiba a quantidade de equipes cadastradas
-  
+```java
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class CadastroTimes {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // Cria um scanner para entrada do usuário
+        
+        System.out.print("Quantos times deseja cadastrar? ");
+        int n = scanner.nextInt(); // Lê o número de times a serem cadastrados
+        scanner.nextLine(); // Consumir a quebra de linha deixada pelo nextInt()
+        
+        Set<String> times = new TreeSet<>(); // Usamos TreeSet para evitar duplicatas e manter ordenação
+        
+        for (int i = 0; i < n; i++) { // Loop para coletar os nomes dos times
+            System.out.print("Digite o nome do time " + (i + 1) + ": ");
+            String nomeTime = scanner.nextLine().toUpperCase(); // Lê o nome e converte para maiúsculas
+            times.add(nomeTime); // Adiciona ao TreeSet
+        }
+        
+        scanner.close(); // Fecha o scanner para evitar vazamento de recursos
+        
+        System.out.println("\nTimes cadastrados (ordenados e sem duplicatas):");
+        for (String time : times) { // Percorre e imprime os times ordenados
+            System.out.println(time);
+        }
+        
+        System.out.println("\nQuantidade total de times cadastrados: " + times.size()); // Exibe a quantidade de times
+    }
+}
+```
+Ou
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class CadastroTimes {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Quantos times deseja cadastrar? ");
+        int n = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha
+        
+        List<String> times = new ArrayList<>(); // Usando List ao invés de Set
+        
+        for (int i = 0; i < n; i++) {
+            System.out.print("Digite o nome do time " + (i + 1) + ": ");
+            String nomeTime = scanner.nextLine().toUpperCase();
+            
+            if (!times.contains(nomeTime)) { // Verifica se já existe na lista
+                times.add(nomeTime);
+            }
+        }
+        
+        scanner.close();
+        
+        Collections.sort(times); // Ordena a lista manualmente
+        
+        System.out.println("\nTimes cadastrados (ordenados e sem duplicatas):");
+        for (String time : times) {
+            System.out.println(time);
+        }
+        
+        System.out.println("\nQuantidade total de times cadastrados: " + times.size());
+    }
+}
+```
 ## 6) Em sua linguagem de preferência, crie um programa que manipule objetos cidades baseados na classe Cidade, contendo, nome da cidade e sigla do estado do Brasil. O controle de duplicidade deve ser via o nome da cidade. O programa deve apresentar um pequeno Menu, em que o usuário possa:
 * cadastrar uma cidade em lista de cidades: nome completo em maiúsculo e a sigla em maiúsculo
 * listar as cidades cadastradas tendo como ordem de ordenação os nomes das cidades
 * pesquisar uma cidade por seu nome e mostrar o seu estado respectivo (no caso, sigla)
 * remover uma cidade, pesquisando-a por seu nome
 * finalizar o programa
+```java
+import java.util.*;
+
+class Cidade {
+    private String nome;
+    private String siglaEstado;
+
+    public Cidade(String nome, String siglaEstado) {
+        this.nome = nome.toUpperCase(); // Armazena em maiúsculas
+        this.siglaEstado = siglaEstado.toUpperCase(); // Armazena em maiúsculas
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSiglaEstado() {
+        return siglaEstado;
+    }
+}
+
+public class GerenciadorCidades {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<Cidade> cidades = new ArrayList<>(); // Lista para armazenar as cidades
+        
+        while (true) {
+            System.out.println("\nMenu:");
+            System.out.println("1 - Cadastrar cidade");
+            System.out.println("2 - Listar cidades");
+            System.out.println("3 - Pesquisar cidade");
+            System.out.println("4 - Remover cidade");
+            System.out.println("5 - Sair");
+            System.out.print("Escolha uma opção: ");
+            int opcao = scanner.nextInt();
+            scanner.nextLine(); // Consumir quebra de linha
+
+            switch (opcao) {
+                case 1:
+                    System.out.print("Digite o nome da cidade: ");
+                    String nome = scanner.nextLine().toUpperCase();
+                    
+                    if (cidades.stream().anyMatch(c -> c.getNome().equals(nome))) {
+                        System.out.println("Cidade já cadastrada!");
+                    } else {
+                        System.out.print("Digite a sigla do estado: ");
+                        String sigla = scanner.nextLine().toUpperCase();
+                        cidades.add(new Cidade(nome, sigla));
+                        System.out.println("Cidade cadastrada com sucesso!");
+                    }
+                    break;
+                
+                case 2:
+                    cidades.sort(Comparator.comparing(Cidade::getNome)); // Ordenação pelo nome
+                    System.out.println("\nCidades cadastradas:");
+                    for (Cidade cidade : cidades) {
+                        System.out.println(cidade.getNome() + " - " + cidade.getSiglaEstado());
+                    }
+                    break;
+                
+                case 3:
+                    System.out.print("Digite o nome da cidade a pesquisar: ");
+                    String pesquisa = scanner.nextLine().toUpperCase();
+                    
+                    Cidade cidadeEncontrada = cidades.stream()
+                        .filter(c -> c.getNome().equals(pesquisa))
+                        .findFirst()
+                        .orElse(null);
+                    
+                    if (cidadeEncontrada != null) {
+                        System.out.println("Estado: " + cidadeEncontrada.getSiglaEstado());
+                    } else {
+                        System.out.println("Cidade não encontrada.");
+                    }
+                    break;
+                
+                case 4:
+                    System.out.print("Digite o nome da cidade a remover: ");
+                    String remover = scanner.nextLine().toUpperCase();
+                    
+                    if (cidades.removeIf(c -> c.getNome().equals(remover))) {
+                        System.out.println("Cidade removida com sucesso!");
+                    } else {
+                        System.out.println("Cidade não encontrada.");
+                    }
+                    break;
+                
+                case 5:
+                    System.out.println("Saindo do programa...");
+                    scanner.close();
+                    return;
+                
+                default:
+                    System.out.println("Opção inválida!");
+            }
+        }
+    }
+}
+
+```
