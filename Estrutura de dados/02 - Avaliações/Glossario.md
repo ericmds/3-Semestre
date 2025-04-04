@@ -148,32 +148,35 @@ public class CadastroTimes {
 * remover uma cidade, pesquisando-a por seu nome
 * finalizar o programa
 ```java
-import java.util.*;
+import java.util.*; // Importa a biblioteca para usar listas e scanner
 
+// Classe que representa uma cidade
 class Cidade {
-    private String nome;
-    private String siglaEstado;
+    private String nome; // Armazena o nome da cidade
+    private String siglaEstado; // Armazena a sigla do estado
 
+    // Construtor que recebe nome e estado e os armazena em maiúsculas
     public Cidade(String nome, String siglaEstado) {
-        this.nome = nome.toUpperCase(); // Armazena em maiúsculas
-        this.siglaEstado = siglaEstado.toUpperCase(); // Armazena em maiúsculas
+        this.nome = nome.toUpperCase(); // Converte o nome para maiúsculas
+        this.siglaEstado = siglaEstado.toUpperCase(); // Converte a sigla para maiúsculas
     }
 
     public String getNome() {
-        return nome;
+        return nome; // Retorna o nome da cidade
     }
 
     public String getSiglaEstado() {
-        return siglaEstado;
+        return siglaEstado; // Retorna a sigla do estado
     }
 }
 
+// Classe principal do programa
 public class GerenciadorCidades {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // Scanner para entrada de dados
         List<Cidade> cidades = new ArrayList<>(); // Lista para armazenar as cidades
         
-        while (true) {
+        while (true) { // Loop infinito para manter o programa rodando até escolher sair
             System.out.println("\nMenu:");
             System.out.println("1 - Cadastrar cidade");
             System.out.println("2 - Listar cidades");
@@ -185,14 +188,14 @@ public class GerenciadorCidades {
             scanner.nextLine(); // Consumir quebra de linha
 
             switch (opcao) {
-                case 1:
+                case 1: // Cadastro de cidade
                     System.out.print("Digite o nome da cidade: ");
-                    String nome = scanner.nextLine().toUpperCase();
+                    String nome = scanner.nextLine().toUpperCase(); // Lê o nome e converte para maiúsculas
                     
-                    boolean existe = false;
+                    boolean existe = false; // Variável para verificar se a cidade já existe
                     for (Cidade c : cidades) {
                         if (c.getNome().equals(nome)) {
-                            existe = true;
+                            existe = true; // Cidade encontrada na lista
                             break;
                         }
                     }
@@ -201,27 +204,28 @@ public class GerenciadorCidades {
                         System.out.println("Cidade já cadastrada!");
                     } else {
                         System.out.print("Digite a sigla do estado: ");
-                        String sigla = scanner.nextLine().toUpperCase();
-                        cidades.add(new Cidade(nome, sigla));
+                        String sigla = scanner.nextLine().toUpperCase(); // Lê a sigla e converte para maiúsculas
+                        cidades.add(new Cidade(nome, sigla)); // Adiciona a cidade à lista
                         System.out.println("Cidade cadastrada com sucesso!");
                     }
                     break;
                 
-                case 2:
+                case 2: // Listar todas as cidades cadastradas em ordem crescente
+                    cidades.sort((cidade1, cidade2) -> cidade1.getNome().compareTo(cidade2.getNome())); // Ordena a lista pelo nome da cidade
                     System.out.println("\nCidades cadastradas:");
                     for (Cidade cidade : cidades) {
-                        System.out.println(cidade.getNome() + " - " + cidade.getSiglaEstado());
+                        System.out.println(cidade.getNome() + " - " + cidade.getSiglaEstado()); // Exibe nome e estado
                     }
                     break;
                 
-                case 3:
+                case 3: // Pesquisar cidade pelo nome
                     System.out.print("Digite o nome da cidade a pesquisar: ");
-                    String pesquisa = scanner.nextLine().toUpperCase();
+                    String pesquisa = scanner.nextLine().toUpperCase(); // Lê a cidade e converte para maiúsculas
                     
-                    boolean encontrada = false;
+                    boolean encontrada = false; // Variável para verificar se a cidade foi encontrada
                     for (Cidade c : cidades) {
                         if (c.getNome().equals(pesquisa)) {
-                            System.out.println("Estado: " + c.getSiglaEstado());
+                            System.out.println("Estado: " + c.getSiglaEstado()); // Exibe a sigla do estado
                             encontrada = true;
                             break;
                         }
@@ -232,34 +236,25 @@ public class GerenciadorCidades {
                     }
                     break;
                 
-                case 4:
+                case 4: // Remover cidade pelo nome
                     System.out.print("Digite o nome da cidade a remover: ");
-                    String remover = scanner.nextLine().toUpperCase();
+                    String remover = scanner.nextLine().toUpperCase(); // Lê a cidade e converte para maiúsculas
                     
-                    boolean removida = false;
-                    for (int i = 0; i < cidades.size(); i++) {
-                        if (cidades.get(i).getNome().equals(remover)) {
-                            cidades.remove(i);
-                            removida = true;
-                            System.out.println("Cidade removida com sucesso!");
-                            break;
-                        }
-                    }
+                    boolean removida = cidades.removeIf(c -> c.getNome().equals(remover)); // Remove a cidade da lista
                     
-                    if (!removida) {
-                        System.out.println("Cidade não encontrada.");
-                    }
+                    System.out.println(removida ? "Cidade removida com sucesso!" : "Cidade não encontrada."); // Exibe mensagem
                     break;
                 
-                case 5:
+                case 5: // Encerrar o programa
                     System.out.println("Saindo do programa...");
-                    scanner.close();
+                    scanner.close(); // Fecha o scanner
                     return;
                 
-                default:
+                default: // Caso o usuário escolha uma opção inválida
                     System.out.println("Opção inválida!");
             }
         }
     }
 }
+
 ```
