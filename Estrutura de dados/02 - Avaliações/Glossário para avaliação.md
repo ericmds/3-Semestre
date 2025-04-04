@@ -24,7 +24,8 @@ System.out.println(numeros[2]); // Saída: 3
 #### Filas (Queue)
 * FIFO (First In, First Out): o primeiro elemento a entrar é o primeiro a sair.
 * Permite inserções no fim (cauda) e remoções no início (cabeça).
-* Exemplo:
+
+Exemplo:
 ```java
 Queue<Integer> fila = new LinkedList<>();
 fila.add(10);
@@ -35,7 +36,8 @@ System.out.println(fila.poll()); // Saída: 10 (o primeiro a entrar)
 #### Pilhas (Stack)
 * LIFO (Last In, First Out): o último elemento a entrar é o primeiro a sair.
 * Permite apenas inserção e remoção no topo.
-* Exemplo:
+
+Exemplo:
 ```java
 Stack<Integer> pilha = new Stack<>();
 pilha.push(5);
@@ -46,7 +48,8 @@ System.out.println(pilha.pop()); // Saída: 10 (último a entrar, primeiro a sai
 #### HashMap (Dicionário)
 * Estrutura que armazena pares chave-valor, usando uma função hash para acesso eficiente.
 * Chaves são únicas.
-* Exemplo:
+
+Exemplo:
 ```java
 Copiar
 Editar
@@ -65,7 +68,8 @@ System.out.println(mapa.get("João")); // Saída: 25
 * Coleção ordenada de elementos.
 * Permite inserções, remoções e buscas por posição.
 * Pode ser implementada com arrays (ArrayList) ou listas encadeadas (LinkedList).
-* Exemplo:
+
+Exemplo:
 ```java
 Copiar
 Editar
@@ -78,7 +82,8 @@ System.out.println(lista.get(1)); // Saída: B
 #### Dicionário (Map)
 * Armazena pares chave-valor.
 * Busca rápida por chave.
-* Exemplo:
+
+Exemplo:
 ```java
 Map<String, Integer> dicionario = new HashMap<>();
 dicionario.put("chave1", 100);
@@ -88,8 +93,8 @@ System.out.println(dicionario.get("chave1")); // Saída: 100
 #### Conjunto (Set)
 * Não permite elementos duplicados.
 * Implementado geralmente com tabelas hash (HashSet).
-* Exemplo:
 
+Exemplo:
 ```java
 Set<String> conjunto = new HashSet<>();
 conjunto.add("A");
