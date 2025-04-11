@@ -24,7 +24,50 @@
 * preencha N nomes de equipes de futebol, obrigatóriamente em maiúsculo. Esses nomes devem ser armazenados em um dicionário que se possa controlar duplicados.
 * exiba os nomes das equipes cadastradas
 * exiba a quantidade de equipes cadastradas
+Em java
+```java
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
+public class DicionarioEquipes {
+    public static void main(String[] args) {
+        // Criando um dicionario que vai utilizar duas chaves: Nome, cidade
+        Map<String, String> equipes = new HashMap<>();
+        Scanner teclado = new Scanner(System.in);
+
+        String nome, cidade;
+        String opcao;
+
+        do {
+            System.out.print("Nome da equipe: ");
+            nome = teclado.nextLine().toUpperCase();
+            System.out.print("Nome da cidade: ");
+            cidade = teclado.nextLine().toUpperCase();
+
+            if (!equipes.containsKey(nome)) { // Se o nome não contem em equipes
+                equipes.put(nome, cidade); // Adicionando nome e cidade no dicionario equipe
+            } else {
+                System.out.println("Equipe já cadastrada."); // Mostra mensagem se já contem
+            }
+            System.out.println("1 - Continuar | 2 - Encerrar");
+            opcao = teclado.nextLine();
+
+            if (!opcao.equals("1")) {
+                break;
+            }
+
+        } while (true);
+
+        System.out.println("\nEquipes cadastradas:");
+        for (Map.Entry<String, String> equipe : equipes.entrySet()) {
+            System.out.println("Time: " + equipe.getKey() + " | Cidade: " + equipe.getValue());
+        }
+
+        teclado.close();
+    }
+}
+```
 ## 5) Em sua linguagem de preferência, crie um programa que manipule objetos cidades baseados na classe Cidade, contendo, nome da cidade e sigla do estado do Brasil. O controle de duplicidade deve ser via o nome da cidade. O programa deve apresentar um pequeno Menu, em que o usuário possa:
 * cadastrar uma cidade em lista de cidades: nome completo em maiúsculo e a sigla em maiúsculo
 * listar as cidades cadastradas tendo como ordem de ordenação os nomes das cidades
