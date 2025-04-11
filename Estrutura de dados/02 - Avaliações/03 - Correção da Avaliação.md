@@ -25,7 +25,7 @@
 * exiba os nomes das equipes cadastradas
 * exiba a quantidade de equipes cadastradas
 
-5) Em sua linguagem de preferência, crie um programa que manipule objetos cidades baseados na classe Cidade, contendo, nome da cidade e sigla do estado do Brasil. O controle de duplicidade deve ser via o nome da cidade. O programa deve apresentar um pequeno Menu, em que o usuário possa:
+## 5) Em sua linguagem de preferência, crie um programa que manipule objetos cidades baseados na classe Cidade, contendo, nome da cidade e sigla do estado do Brasil. O controle de duplicidade deve ser via o nome da cidade. O programa deve apresentar um pequeno Menu, em que o usuário possa:
 * cadastrar uma cidade em lista de cidades: nome completo em maiúsculo e a sigla em maiúsculo
 * listar as cidades cadastradas tendo como ordem de ordenação os nomes das cidades
 * pesquisar uma cidade por seu nome e mostrar o seu estado respectivo (no caso, sigla)
