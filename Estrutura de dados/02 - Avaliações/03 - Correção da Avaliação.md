@@ -69,6 +69,27 @@ public class DicionarioEquipes {
     }
 }
 ```
+
+Em Python
+```py
+equipes = {}
+
+while (True):
+    nome = input('Nome da equipe: ').upper()
+    cidade = input('Cidade da equipe: ').upper()
+
+    if nome not in equipes.keys():
+        equipes[nome] = cidade
+    else:
+        print('Equipe já cadastrada...')
+    opcao = input('1 - Continua; Outra tecla encerra: ')
+    if opcao != '1':
+        break
+
+for chave, valor in equipes.items():
+    print(f'Time: {chave} | Cidade: {valor}')
+```
+
 ## 5) Em sua linguagem de preferência, crie um programa que manipule objetos cidades baseados na classe Cidade, contendo, nome da cidade e sigla do estado do Brasil. O controle de duplicidade deve ser via o nome da cidade. O programa deve apresentar um pequeno Menu, em que o usuário possa:
 * cadastrar uma cidade em lista de cidades: nome completo em maiúsculo e a sigla em maiúsculo
 * listar as cidades cadastradas tendo como ordem de ordenação os nomes das cidades
