@@ -24,6 +24,7 @@
 * preencha N nomes de equipes de futebol, obrigatóriamente em maiúsculo. Esses nomes devem ser armazenados em um dicionário que se possa controlar duplicados.
 * exiba os nomes das equipes cadastradas
 * exiba a quantidade de equipes cadastradas
+
 Em java
 ```java
 import java.util.HashMap;
