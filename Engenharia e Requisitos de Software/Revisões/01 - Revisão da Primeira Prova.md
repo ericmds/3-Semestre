@@ -309,6 +309,7 @@ Os métodos ágeis surgiram como uma resposta à rigidez dos modelos tradicionai
 - Facilita planejamento, testes e manutenção futura.
 
 ---
+# PERGUNTAS
 
 1. Definição de Software
 a) Qual é a principal característica que diferencia o software do hardware?
