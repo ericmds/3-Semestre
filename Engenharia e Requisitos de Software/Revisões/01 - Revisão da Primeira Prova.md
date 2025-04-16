@@ -308,3 +308,197 @@ Os métodos ágeis surgiram como uma resposta à rigidez dos modelos tradicionai
 - Previne mudanças de escopo inesperadas.
 - Facilita planejamento, testes e manutenção futura.
 
+---
+
+1. Definição de Software
+a) Qual é a principal característica que diferencia o software do hardware?
+A principal diferença é que o software não se desgasta com o tempo, pois não sofre a ação de agentes físicos, ao contrário do hardware, que se desgasta com o uso e depende de um processo de fabricação.
+
+b) Cite e explique dois tipos de software, com exemplos.
+
+Software de aplicação: voltado para o usuário final, como editores de texto (ex: Microsoft Word) e navegadores de internet (ex: Google Chrome).
+
+Software embutido: embarcado em dispositivos físicos, como micro-ondas e carros, realizando funções específicas dentro do dispositivo.
+
+c) Quais são os problemas associados ao software, conforme mencionado no texto?
+
+A complexidade aumenta com o tamanho e escopo do sistema.
+
+A qualidade do software é subjetiva e difícil de medir.
+
+O software não é tangível, o que torna sua visualização difícil.
+
+2. Engenharia de Software
+a) O que é engenharia de software e qual seu foco principal?
+A engenharia de software é a disciplina que aplica princípios de engenharia para o desenvolvimento de software, com foco na qualidade, custo e prazos. Ela envolve práticas sistemáticas para desenvolvimento, operação e manutenção de sistemas.
+
+b) Explique o modelo de "Tecnologia em camadas" segundo Pressman.
+O modelo de "Tecnologia em camadas" consiste em quatro camadas:
+
+Qualidade: base de todo o processo.
+
+Processo: define as atividades organizadas.
+
+Métodos: técnicas para realizar tarefas como análise, projeto e testes.
+
+Ferramentas: apoio automatizado/semi-automatizado, como IDEs e ferramentas de modelagem.
+
+c) Descreva o processo de Engenharia de Software em suas cinco fases.
+
+Comunicação: entender as necessidades do cliente.
+
+Planejamento: definir cronograma, equipe e recursos.
+
+Modelagem: criar representações do sistema (diagramas, estruturas).
+
+Construção: codificação e testes.
+
+Emprego: implantação, uso e manutenção do sistema.
+
+3. Modelos de Processo de Software
+a) O que é um processo de software e qual sua importância?
+Um processo de software é um conjunto de atividades organizadas para criar um produto de software, garantindo que ele seja produzido com qualidade, dentro do prazo e do orçamento. Sua importância está em fornecer um caminho sistemático para o desenvolvimento e permitir o controle da qualidade e do progresso.
+
+b) Explique as diferenças entre os fluxos de processo Linear, Iterativo, Evolucionário e Paralelo.
+
+Fluxo Linear: As atividades são realizadas de forma sequencial. Ideal para projetos com requisitos bem definidos.
+
+Fluxo Iterativo: Atividades são repetidas antes de avançar. Permite revisões contínuas, comum quando os requisitos evoluem.
+
+Fluxo Evolucionário: Executa atividades cíclicas e entrega versões incrementais do sistema. Usado em prototipação e desenvolvimento incremental.
+
+Fluxo Paralelo: Algumas atividades ocorrem simultaneamente, exigindo coordenação eficiente entre as equipes.
+
+c) Qual a principal vantagem e desvantagem do Modelo Cascata?
+
+Vantagem: A sequência linear das fases torna o processo simples de entender e controlar.
+
+Desvantagem: Dificuldade de adaptação a mudanças de requisitos, e problemas só são percebidos nas fases finais.
+
+d) No Modelo V, o que é enfatizado e qual é a sua principal característica?
+O Modelo V enfatiza testes, com cada fase do desenvolvimento tendo uma fase de verificação correspondente, assegurando que cada parte do sistema seja validada à medida que é desenvolvida.
+
+e) Quais são os principais problemas do Modelo de Prototipação?
+
+Protótipos muitas vezes são mal documentados.
+
+Os usuários podem acreditar que o protótipo já é o sistema final.
+
+Pode levar a compromissos técnicos precipitados.
+
+4. Desenvolvimento Ágil
+a) O que é desenvolvimento ágil e quais são seus princípios principais?
+Desenvolvimento ágil é uma metodologia que prioriza a entrega contínua de software funcional, com foco em indivíduos, interações e adaptação a mudanças.
+Princípios principais:
+
+Satisfazer o cliente com entregas rápidas e contínuas.
+
+Acolher mudanças de requisitos, mesmo tardiamente.
+
+Entregar software funcional frequentemente.
+
+Colaboração próxima com o cliente.
+
+Apoiar equipes motivadas e autônomas.
+
+Comunicação face a face é a mais eficaz.
+
+Medir progresso pela entrega de software funcional.
+
+Desenvolvimento sustentável.
+
+Atenção à excelência técnica.
+
+Simplicidade.
+
+Equipes auto-organizadas.
+
+Reflexão constante e ajustes de comportamento.
+
+b) Cite e explique dois métodos ágeis e seus principais pontos.
+
+Scrum: Organiza o trabalho em ciclos curtos chamados Sprints, com reuniões diárias e entregas incrementais.
+
+Extreme Programming (XP): Foca na qualidade do código com programação em pares, testes automatizados e integração contínua.
+
+c) Quais são os principais benefícios e desafios dos métodos ágeis?
+Benefícios:
+
+Maior adaptação às mudanças de requisitos.
+
+Entregas contínuas e de valor para o cliente.
+
+Redução de riscos por meio de ciclos curtos.
+
+Maior motivação e participação da equipe.
+Desafios:
+
+Pode ser difícil para equipes com baixa maturidade.
+
+Requer comprometimento contínuo do cliente.
+
+A documentação pode ser reduzida se não houver equilíbrio.
+
+5. Rational Unified Process (RUP)
+a) Quais são as quatro fases do RUP?
+
+Concepção: Identificar escopo, partes interessadas e objetivos.
+
+Elaboração: Estabelecer arquitetura e reduzir riscos.
+
+Construção: Desenvolvimento e testes incrementais.
+
+Transição: Implantação, treinamento e suporte inicial.
+
+b) O que são as três perspectivas do RUP e qual é a função de cada uma?
+
+Dinâmica: Representa as fases ao longo do tempo.
+
+Estática: Define workflows como análise, design, implementação e testes.
+
+Prática: Boas práticas recomendadas para garantir o sucesso do processo.
+
+c) Quais são as boas práticas recomendadas pelo RUP?
+
+Desenvolver de forma iterativa.
+
+Gerenciar requisitos de forma controlada.
+
+Usar arquitetura baseada em componentes.
+
+Modelar visualmente com UML.
+
+Verificar qualidade continuamente.
+
+Gerenciar mudanças de forma sistemática.
+
+6. Engenharia de Requisitos
+a) Qual é a diferença entre requisitos funcionais e não-funcionais?
+
+Requisitos funcionais: Especificam o comportamento do sistema, como funcionalidades que o sistema deve ter.
+
+Requisitos não-funcionais: Definem as qualidades ou restrições do sistema, como desempenho e segurança.
+
+b) Cite e explique os tipos de requisitos não-funcionais.
+
+Produto: Desempenho, confiabilidade e portabilidade.
+
+Organizacionais: Padrões da empresa e cronogramas.
+
+Externos: Leis, normas e interoperabilidade com outros sistemas.
+
+c) Descreva as principais atividades da engenharia de requisitos.
+
+Elicitação: Levantamento de requisitos com stakeholders.
+
+Análise: Verificar se há ambiguidades ou contradições.
+
+Documentação: Formalizar os requisitos em um formato compreensível.
+
+Validação: Revisar e aprovar os requisitos.
+
+d) O que é a elicitação de requisitos e quais técnicas podem ser usadas para isso?
+A elicitação de requisitos é o processo de descobrir e entender as necessidades dos stakeholders.
+Técnicas:
+
+Entrevistas, questionários, workshops, brainstorming, prototipagem, JAD (Joint Application Design) e VORD (Viewpoint-Oriented Requirements Definition).
