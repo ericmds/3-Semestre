@@ -1,0 +1,37 @@
+• Protocolos ↳→⮛
+  → Conjunto de padrões/regras de comunicação
+  → Geralmente copiado da vida real
+  → É um tipo de linguagem para a comunicação de dados
+  → Para haver intercâmbio de dados entre computadores, estes precisam falar a mesma língua
+  → Exemplos
+    ↳ NetBeui (Redes Microsoft)
+    ↳ IPX/SPX (Redes Netware)
+    ↳ TCP/IP (Qualquer rede)
+    ↳ Usada hoje em dia
+    ↳ Usada em duas camadas TCP e IP
+  → SOs de Rede
+    ↳ Windows NT
+    ↳ Windows 2000
+    ↳ Netware
+    ↳ Unix
+    ↳ Linux
+  → Segurança
+    → Administradores
+      ↳ Política de Senhas
+      ↳ Criptografias
+      ↳ Firewalls
+      ↳ Backups
+
+• 
+
+  → Finalidade de um sistema de comunicação, é fazer uma REPLICA aceitável da mensagem
+  → Em uma transmissão, sempre haverá:
+    ↳ Atenuação: redução da intensidade
+    ↳ Distorção: alteração do sinal
+    ↳ Interferência: contaminação por sinais estranhos
+    ↳ Ruído: sinais elétricos aleatórios ou imprevisíveis
+
+  → Componentes de um Sistema de Telecomunicações
+    ↳ Fonte → Condificador → Modulador → Tx → M → Rx Demulador Decofigicador Destino
+
+      
