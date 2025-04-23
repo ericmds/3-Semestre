@@ -1,0 +1,130 @@
+• Entender os conceitos básicos em redes, abordando:
+  ↳ Contexto atual
+  ↳ Definição
+  ↳ Distribuição Geográfica
+  ↳ Topologias
+  ↳ Meios de transmissão
+  ↳ Arquitetura de Redes
+  ↳ Tecnoligias de LAN'S
+  ↳ Protocolos
+  ↳ Sistemas Operacionais de Rede
+  ↳ Segurança
+
+• Diferança de bit e byte
+  ↳ bit, menor informação digital, 0 ou 1
+  ↳ 8 bits = 1 byte
+  ↳ Armazenação é feita em bytes
+  ↳ Transmição é feita em bits
+
+• 4 Tecnologias de transmições de dados
+  ↳ Eletron (cabo metáçico)
+  ↳ Ar (Wi-fi)
+  ↳ Luz (fibra óptica)
+
+• Mundo Globalizado
+  ↳ Desenvolvimento tecnológico acelerado
+  ↳ Expansão acelerada das redes de comunicação
+  ↳ Liberalização e desregulamentação os setores de telecomunicação
+  ↳ Ambientes de competividade, devido a internacionalização dos mercados
+
+• Rede de Computadores
+  ↳ Consiste na interconexão entre dois ou mais computadores aciokadis oir neui de recursos de comunicação, distribuídos geograficamente permitindo a comunicação de dados
+
+• Distribuição Geográfica (AVALIAÇÃO)
+
+  → PAN (Personal Area Network): 
+    - Usadas para que dispositivos se comuniquem dentro de uma distância bastante limitada.  
+    - Rede pessoal, computador pessoa, celular pessoal, videogame pessoal.
+
+  → LAN (Local Area Newtork): 
+    ↳ Equipamentos interligados operando em distâncias curtas
+    ↳ Distribuidos em um único prédio ou por prédios vizinhos
+    ↳ Alta velocidade
+
+  → MAN:
+    ↳ Abrange um área geométricamente específica, como cidade ou região metropolitana
+     
+  → WAN:
+    ↳ Não tem controle de velocidade, nem qualquer tipo de controle
+    ↳ A operadora possuio o controle da velocidade, mas quando sai para a internet, para o cliente, não possui controle.
+     
+• Topologias
+  • Tipos de arranjo
+    → Ponto a ponto
+      ↳ Geralmente conectado por um cabo, ou sem fio, concectados uma a outra. Ex: repetidor wi-fi
+    → Multiponto
+      ↳ Ex: TV, rádio
+
+  • Topologias físicas
+    → Barra:
+      ↳ Todas as estações são ligadas em parelelo em cabo
+      ↳ O comprimeto do cabo e o número máximo de estações é determinado pela atenuação do sinal no cabo e pela qualidade das placas de rede
+      ↳ As extremidades do barramento são feitas com terminais
+
+    → Anel:
+      ↳ A saída de cada estação está ligada na entrada da estação seguinte
+      ↳ Fluxo de dados somente em uma direção
+      ↳ É permitido um grande comprimento total de cabo devido a cada estação ser um repetidor de sinal
+
+    → Estrela:
+      ↳ Necessidade de um nó central ou concentrador
+      ↳ Tamnho da rede depende d comporimeito máximo do cabo (100 metros) entre o nó central
+      ↳ Número de estações limitados pelo nó central
+      ↳ O fluxo de dados depende da topologia lógica, pode só receber também só enviar
+
+    → Redes híbridas:
+
+Aula 06/03/2025
+• Meios de transmissão
+  → Analógico x Digital
+    ↳ Analógico: apresenta variações continuas de amplitudo
+    ↳ Digital: amplitude fixa. Dois niveis discretos de tensão para representar os valores lógicos "0" ou "1"
+      ↳ Cabo coaxial
+      ↳ Par traçado
+        ↳ São trançados para cria um campo elétrico diferente e assim velocidades mais rápidas
+        ↳ CMSACD
+      ↳ Fibra ótica
+      ↳ Radiodifusão
+        ↳ A antena faz a transmissão
+      ↳ Satélite
+        ↳ 
+      ↳ Backbone
+        ↳ "Espinha dorsal"
+
+• Equipamentos de rede
+  → Placas
+    ↳ Placas de rede
+  → HUB
+    ↳ Controla e intermedia conexões entre computadores
+    ↳ As informações são transmitidas e recebidas ao mesmo tempo
+    ↳ Os pacotrs são recebidas por todos
+  → SWITCH
+    ↳ Faz um "filtro" para enviar os pacotes somente para quem está
+    ↳ Olha para o endereço fisico, cria uma VLAN e manda os pacotes somente para quem está realizando a transmissão
+  → Roteador
+    ↳ Utilizado em empresas de telecom, para gererir várias pessoa conectadas, e altas velocidades
+  → Bridge
+    ↳ Extensor, conversor de midia
+  → Repetidor
+    ↳ Replica o sinal
+  → Modem
+    ↳ Modulador, demulador
+    ↳ Sempre na saída de uma rede, é necessario ter um modem
+
+• Arquitetura de uma rede
+  ↳ Estrutura que inclui o hardware, as camadas funcionais, as interfaces e os protocolos usados para estabelecer a comunicação
+
+  → Arquitetura cliente/servidor
+    ↳ Cliente: entidade que solicita o serviço
+    ↳ Servidor: entidade que presta serviço
+      ↳ Dedicado: uma máquina que não possui um teclado e mouse para usar, está dedicado somente a rede
+      ↳ Não dedicado: 
+    ↳ O modelo cliente-servidor envolve solicitações e respostas
+    ↳ Arquivos: seriços de armanezamento e acesso às informações
+    ↳ Banco de dados: BDs e processos de consulta
+    ↳ Impressão: serviços de imoressão
+    ↳ Comunicação
+
+  → Arquitetura peer-to-peer
+    ↳ Interação entre dispositivos no mesmo nível de comunicação
+    ↳ Um ponto pode ser servidor e cliente ao mesmo tempo
