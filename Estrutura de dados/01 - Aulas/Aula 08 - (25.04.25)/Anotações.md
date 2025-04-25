@@ -180,10 +180,98 @@ public class Principal {
 ---
 
 Classe Processo - C#
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Fila
+{
+    internal class Processo
+    {
+        /// <summary>
+        /// Identificador do processo
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
+        /// Texto que classifica o processo
+        /// </summary>
+        public string Descricao { get; set; }
+
+        /// <summary>
+        /// Construtor que recebe um identificador e uma descrição
+        /// </summary>
+        /// <param name="id">Um número entre 1 e 1000</param>
+        /// <param name="descricao">Um texto que classifica o processo</param>
+        public Processo(int id, string descricao)
+        {
+            Id = id;
+            Descricao = descricao;
+        }
+        public override string? ToString()
+        {
+            return base.ToString();
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return base.Equals(obj);
+        }
+
+    }
+}
 ```
 
-```
 Classe Principal - C#
-```
+```cs
+namespace Fila
+{
+    internal class Principal
+    {
 
+        public static void gerarProcessosEmFila(Queue<Processo> filaPrioritaria, Queue<Processo> filaNormal, int quantidadeProcessos)
+        {
+            Random gerador = new Random();
+            int numeroProcessoGerado;
+
+            //Rotina para gerar 1000 processos entre 1 e 1000
+            for (int i = 0; i < quantidadeProcessos; i++)
+            {
+                numeroProcessoGerado = gerador.Next(0, 1001);
+
+                switch (numeroProcessoGerado)
+                {
+                    case 0:
+                        //Rotina para retirar da fila prioritária
+                        Console.WriteLine("ATENDENDO: " + filaPrioritaria.Dequeue());
+                        break;
+                    case 500:
+                        //Rotina para retirar da fila normal
+                        Console.WriteLine("ATENDENDO: " + filaNormal.Dequeue());
+                        break;
+                    default:
+                        //Rotina para inserir processo na fila prioritaria
+                        if (numeroProcessoGerado < 500)
+                        {
+                            Processo processoTMP = new Processo(numeroProcessoGerado, "Processo de alta prioridade");
+                        }
+                        break;
+
+
+
+                
+
+
+                }
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
 ```
