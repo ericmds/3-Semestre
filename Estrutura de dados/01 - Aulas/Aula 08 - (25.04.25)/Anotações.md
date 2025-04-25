@@ -13,8 +13,8 @@
   * Filas Queue - Classe abstrata → Esqueleto com atributos e métodos... só que não instancia objetos
     * FIFO - Fist In, First Out
       * Operações clássicas
-        * Inserir no final/cauda → add, push (mesma coisa que o add, mas utilizado para idenficar uma fila)
-        * Remover no inicio/cabeça → remove, pop (mesma coisa que pop, mas utilizado para idenficar uma fila)
+        * Inserir no final/cauda → add
+        * Remover no inicio/cabeça → remove
       * Operações herdadas
         * size
         * contains
