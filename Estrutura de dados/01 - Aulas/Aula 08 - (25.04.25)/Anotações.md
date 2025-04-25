@@ -7,6 +7,10 @@
         * toString(), ToString(), __str__, __repr__
         * equals(), Equals(), __eq__
         * hashCode(), GerHashCode(), __hash__
-          * Realiza a busca por endereçamento 
+          * Realiza a busca por endereçamento
           * Vantagens: velocidade de busca, e armanezamento
-          * Descantagens: não é organizada, não da para buscar por índice   
+          * Descantagens: não é organizada, não da para buscar por índice
+  * Filas Queue - Classe abstrata -> Esqueleto com atributos e métodos... só que não instancia objetos
+    * FIFO - Fist In, First Out
+      * Operações clássicas
+        * Inserir no final/cauda -> add   
