@@ -33,7 +33,8 @@
              * Demais números → Seguem a dinâmica acima → Controle de duplicados
              * A dinâmica deve repetir 10000
         5) Exibir as filas ao final, com os processos não atendidos (mostrando contadores)
-Clasee Processos
+
+Clasee Processo - JAVA
 ```java
 package Fila;
 
@@ -92,7 +93,7 @@ public class Processo {
 }
 ```
 
-Classe Principal
+Classe Principal - JAVA
 ```java
 package Fila;
 
@@ -173,5 +174,16 @@ public class Principal {
 
 	}
 }
+
+```
+
+---
+
+Classe Processo - C#
+```
+
+```
+Classe Principal - C#
+```
 
 ```
