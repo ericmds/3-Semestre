@@ -35,3 +35,6 @@
  
 ### Astah - Diagrama de Estado
 ![{557000EF-C137-4F2F-A62E-38024FB59E7E}](https://github.com/user-attachments/assets/cb0efb4f-5622-4082-9683-af5b0b5ab342)
+
+![{B3A76870-7637-45F8-98B8-C2E43F2C57A5}](https://github.com/user-attachments/assets/a2422550-6a70-4a92-8365-959ad28dc803)
+
