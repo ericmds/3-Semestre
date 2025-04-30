@@ -22,4 +22,7 @@
 * Seu emprego mais comum é na captura de trabalhos que vão ser executados quando uma operação específica do sistema é disparada (ação)
 * Muito úteis para modelagem de fluxo de trabalho de processos
 
-* ### Elementos de um diagrama de atividades
+### Elementos de um diagrama de atividades
+
+### Astah - Diagrama de Atividade
+![{010D97D8-FAC7-4E0E-A7BE-C4EC1C58CFA7}](https://github.com/user-attachments/assets/0621ba64-4157-40ca-9f4e-1e615358223c)
