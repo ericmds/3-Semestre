@@ -155,6 +155,8 @@ int main() {
 
     exibirLista(listaAB);
 
+    cout <<"--- Elementos da lista removidos com sucesso ---\n";
+
     return 0;
 }
 ```
