@@ -12,7 +12,7 @@
   * Edentação e bom uso de variáveis
 
 ### Lista.h
-```java
+```cpp
 #include <cstdlib>
 
 typedef struct no {
@@ -109,7 +109,7 @@ void ordenarLista(Celula *listaAB){
 ```
 
 ### Lista.cpp
-```java
+```cpp
 #include <iostream>
 #include <ctime>
 
