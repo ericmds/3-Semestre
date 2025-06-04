@@ -59,3 +59,13 @@
 
 ![image](https://github.com/user-attachments/assets/2eda50a7-29e3-4fe1-83b0-57c0c35f3399)
 
+### Para o diagrama estar sintaticamente correto, deve-se observar que:
+* A acada nó branch deve corresponder um nó merge
+* A cada fork deve corresponder um nó join
+* Os nós branch, merge, fork e join devem estar perfeitamente aninhados
+  * Um branch não pode terminar com um join e um fork não pode terminar com merge nem podem estar entrelaçados
+* Só pode existir um nó inicial
+* Só pode existir um nó final
+* Cada atividade só pode ter um único fluxo de entrada e um único fluxo de saída
+  * Isso não vale para os nós join, fork, merge e branch, que não são atividades
+* Os nós fork, join, branch e merge podem estar em qualquer uma das raias, pois seu significado não é afetado por elas 
