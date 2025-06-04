@@ -100,7 +100,7 @@ Estado (simples): Condição ou situação
 
 * Transição: Movimento de um estado para outro estado. Representa um evento que causa uma mudança no estado de um objeto, levando a um novo estado.
 * Ocorre da seguinte forma:
-  1. Um elemento está em um estado inicial;
-  2. Um evento ocorre;
-  3. Uma ação é realizada;
-  4. O elemento muda para um estado distinto
+  I. Um elemento está em um estado inicial;
+  II. Um evento ocorre;
+  III. Uma ação é realizada;
+  IV. O elemento muda para um estado distinto
