@@ -15,11 +15,11 @@
  * **Ação**
 
 ## Elementos de um diagrama de atividades
-**Nó inicial:** Ponto de início da atividade modelada
+* **Nó inicial:** Ponto de início da atividade modelada
 
 ![image](https://github.com/user-attachments/assets/687de893-fde7-4e4d-9214-cd6327cddf44)
 
-**Fluxo / Aresta:** Ou ainda transição.Descreve a sequência na qual as atividadesse realizam. Conexões entre duas ações.Representado por uma seta.
+* **Fluxo / Aresta:** Ou ainda transição.Descreve a sequência na qual as atividadesse realizam. Conexões entre duas ações.Representado por uma seta.
 
 ![image](https://github.com/user-attachments/assets/fc146e78-cbf0-490b-9610-32697cfd0307)
 
