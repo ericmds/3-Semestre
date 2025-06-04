@@ -116,18 +116,28 @@ São muito usados paramodelar o comportamento de:
 * Atividade: Execução atual não atômica em uma máquina de estados.
 
 * Pseudo Estado de escolha: Ponto na transição de estado de um objeto no qual uma decisão será tomada, baseada em uma condição. É um nó de decisão, condicionado por condições de guarda, para decidir qual o próximo estado a ser gerado para o objeto.
-
+<div>
+![image](https://github.com/user-attachments/assets/1f4df729-1ac2-471d-bd06-c2689f8408cb)
+</div>
 * Condições de guarda: Condição avaliada após o disparo de um evento, que determina como ocorrerá a transição (pode haver múltiplas transições possíveis do mesmo estado com o mesmodisparo) mas só uma ocorrerá.
+
+![image](https://github.com/user-attachments/assets/d9c4a9d9-822c-4ae0-90aa-fb9291c5693e)
 
 * Barra de Bifurcação: Ocorre quando duas ou mais transições partem de um mesmo estado. Assim, haverá mais de um processo ocorrendo de forma paralela.
 
+![image](https://github.com/user-attachments/assets/f3442401-4f36-46d6-a8bb-88676b3200fa)
+
 * Barra de União / Junção: Quando duas ou mais transições levam a um mesmo estado. Determina o momento em que dois ou mais processos paralelos se unem em um único processo.
+
+![image](https://github.com/user-attachments/assets/cbe65317-0f2b-488e-b66d-3fbbd033100c)
 
 * Atividades internas: Um objeto pode realizar atividades enquanto está em um estado. Essas atividades podem ser detalhadas por meio das seguintes cláusulas:
   * entry/ Atividade executada quando o objeto entra em um estado
   * do/Executada enquanto o objeto está em um estado
   * exit/ Quando o objeto sai de um estado (antes da transição)
   * onevent/ Realizada em resposta a um evento (estímulo
+
+![image](https://github.com/user-attachments/assets/b14a74a5-f9df-47e7-a25b-3de275172634)
  
  ### Como criar um diagrama de estados
 * Determinando o estado inicial e o estado final
