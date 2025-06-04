@@ -1,4 +1,4 @@
-# Diagrama de Atividades -  Máquina de Estado
+# Diagrama de Atividades
 * É um diagrama comportamental
 * Representa graficamente o fluxo de controle de uma atividade para outra
 * Possui descrição de ações passoa-a-passo em um sistema
@@ -69,3 +69,38 @@
 * Cada atividade só pode ter um único fluxo de entrada e um único fluxo de saída
   * Isso não vale para os nós join, fork, merge e branch, que não são atividades
 * Os nós fork, join, branch e merge podem estar em qualquer uma das raias, pois seu significado não é afetado por elas 
+
+# Diagrama de Máquina de Estado
+* É um diagrama comportamental empregado para descrevercomo um sistema se comporta quando um evento ocorre,considerando todos os estados, transições e ações possíveis de um objeto
+* Representa o estado ou situação na qual um objeto pode se encontrar ao longo da execução dos processos em um sistema.
+*  Mostra como um elemento se comporta por meio de um conjunto de transições de estado, a chamada "máquina de estados”.
+
+## Para que serve
+São muito usados paramodelar o comportamento de:
+* Interfaces
+* Casos de Uso
+* Instâncias de classe
+* Modelagem desistemas reativos
+
+## Elementos de um diagrama de estados
+Estado (simples): Condição ou situação
+ na vida de um objeto que satisfaz
+ alguma condição, realiza alguma
+ atividade ou espera um evento.
+
+ Estado inicial: Determina o início da
+ modelagem dos estados de um
+ elemento.
+
+ Estado Final: Indica o final dos estados
+ modelados para o elemento.
+
+  Estado composto: Estado que possui
+ sub-estado.
+
+* Transição: Movimento de um estado para outro estado. Representa um evento que causa uma mudança no estado de um objeto, levando a um novo estado.
+* Ocorre da seguinte forma:
+  1) Um elemento está em um estado inicial;
+  2) Um evento ocorre;
+  3) Uma ação é realizada;
+  4) O elemento muda para um estado distinto
