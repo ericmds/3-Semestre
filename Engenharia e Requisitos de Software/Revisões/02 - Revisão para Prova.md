@@ -83,20 +83,13 @@ São muito usados paramodelar o comportamento de:
 * Modelagem desistemas reativos
 
 ## Elementos de um diagrama de estados
-Estado (simples): Condição ou situação
- na vida de um objeto que satisfaz
- alguma condição, realiza alguma
- atividade ou espera um evento.
+* Estado (simples): Condição ou situação na vida de um objeto que satisfaz alguma condição, realiza alguma atividade ou espera um evento.
 
- Estado inicial: Determina o início da
- modelagem dos estados de um
- elemento.
+* Estado inicial: Determina o início da modelagem dos estados de um elemento.
 
- Estado Final: Indica o final dos estados
- modelados para o elemento.
+* Estado Final: Indica o final dos estados modelados para o elemento.
 
-  Estado composto: Estado que possui
- sub-estado.
+* Estado composto: Estado que possui sub-estado.
 
 * Transição: Movimento de um estado para outro estado. Representa um evento que causa uma mudança no estado de um objeto, levando a um novo estado.
 * Ocorre da seguinte forma:
@@ -108,33 +101,17 @@ Estado (simples): Condição ou situação
 * Evento: Incidente que leva os objetos a transacionar de um estado para outro. Ocorrência de um estímulo que pode disparar uma transição de estados. Pode ser interno ou externo.
   * Tipo de eventos: Sinal, Chamada, Temporização, Mudança
 
- Ação: Execução atômica que se completa sem interrupção,
- resultando em uma alteração de estado.
+* Ação: Execução atômica que se completa sem interrupção, resultando em uma alteração de estado.
  
- Atividade: Execução atual não atômica em uma máquina de
- estados.
+* Atividade: Execução atual não atômica em uma máquina de estados.
 
-Pseudo Estado de escolha: Ponto na transição
- de estado de um objeto no qual uma decisão
- será tomada, baseada em uma condição. É um
- nó de decisão, condicionado por condições de
- guarda, para decidir qual o próximo estado a
- ser gerado para o objeto.
+* Pseudo Estado de escolha: Ponto na transição de estado de um objeto no qual uma decisão será tomada, baseada em uma condição. É um nó de decisão, condicionado por condições de guarda, para decidir qual o próximo estado a ser gerado para o objeto.
 
- Condições de guarda: Condição avaliada após
- o disparo de um evento, que determina como
- ocorrerá a transição (pode haver múltiplas
- transições possíveis do mesmo estado com o
- mesmodisparo) mas só uma ocorrerá.
+* Condições de guarda: Condição avaliada após o disparo de um evento, que determina como ocorrerá a transição (pode haver múltiplas transições possíveis do mesmo estado com o mesmodisparo) mas só uma ocorrerá.
 
-Barra de Bifurcação: Ocorre quando duas ou mais transições
- partem de um mesmo estado. Assim, haverá mais de um
- processo ocorrendo de forma paralela.
+* Barra de Bifurcação: Ocorre quando duas ou mais transições partem de um mesmo estado. Assim, haverá mais de um processo ocorrendo de forma paralela.
 
-Barra de União / Junção: Quando duas ou mais transições
- levam a um mesmo estado. Determina o momento em que
- dois ou mais processos paralelos se unem em um único
- processo.
+* Barra de União / Junção: Quando duas ou mais transições levam a um mesmo estado. Determina o momento em que dois ou mais processos paralelos se unem em um único processo.
 
 * Atividades internas: Um objeto pode realizar atividades enquanto está em um estado. Essas atividades podem ser detalhadas por meio das seguintes cláusulas:
   * entry/ Atividade executada quando o objeto entra em um estado
