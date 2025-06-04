@@ -16,10 +16,8 @@
 
 ## Elementos de um diagrama de atividades
 * **Nó inicial:** Ponto de início da atividade modelada
-<div>
+
 ![image](https://github.com/user-attachments/assets/687de893-fde7-4e4d-9214-cd6327cddf44)
-</div>
- 
 
 * **Fluxo / Aresta:** Ou ainda transição.Descreve a sequência na qual as atividadesse realizam. Conexões entre duas ações.Representado por uma seta.
 
