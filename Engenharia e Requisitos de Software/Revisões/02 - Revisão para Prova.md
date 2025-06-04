@@ -100,7 +100,51 @@ Estado (simples): Condição ou situação
 
 * Transição: Movimento de um estado para outro estado. Representa um evento que causa uma mudança no estado de um objeto, levando a um novo estado.
 * Ocorre da seguinte forma:
-  I. Um elemento está em um estado inicial;
-  II. Um evento ocorre;
-  III. Uma ação é realizada;
-  IV. O elemento muda para um estado distinto
+  1. Um elemento está em um estado inicial;
+  2. Um evento ocorre;
+  3. Uma ação é realizada;
+  4. O elemento muda para um estado distinto
+
+* Evento: Incidente que leva os objetos a transacionar de um estado para outro. Ocorrência de um estímulo que pode disparar uma transição de estados. Pode ser interno ou externo.
+  * Tipo de eventos: Sinal, Chamada, Temporização, Mudança
+
+ Ação: Execução atômica que se completa sem interrupção,
+ resultando em uma alteração de estado.
+ 
+ Atividade: Execução atual não atômica em uma máquina de
+ estados.
+
+Pseudo Estado de escolha: Ponto na transição
+ de estado de um objeto no qual uma decisão
+ será tomada, baseada em uma condição. É um
+ nó de decisão, condicionado por condições de
+ guarda, para decidir qual o próximo estado a
+ ser gerado para o objeto.
+
+ Condições de guarda: Condição avaliada após
+ o disparo de um evento, que determina como
+ ocorrerá a transição (pode haver múltiplas
+ transições possíveis do mesmo estado com o
+ mesmodisparo) mas só uma ocorrerá.
+
+Barra de Bifurcação: Ocorre quando duas ou mais transições
+ partem de um mesmo estado. Assim, haverá mais de um
+ processo ocorrendo de forma paralela.
+
+Barra de União / Junção: Quando duas ou mais transições
+ levam a um mesmo estado. Determina o momento em que
+ dois ou mais processos paralelos se unem em um único
+ processo.
+
+* Atividades internas: Um objeto pode realizar atividades enquanto está em um estado. Essas atividades podem ser detalhadas por meio das seguintes cláusulas:
+  * entry/ Atividade executada quando o objeto entra em um estado
+  * do/Executada enquanto o objeto está em um estado
+  * exit/ Quando o objeto sai de um estado (antes da transição)
+  * onevent/ Realizada em resposta a um evento (estímulo
+ 
+ ### Como criar um diagrama de estados
+* Determinando o estado inicial e o estado final
+* Identificando todos os estados possíveis para o processo modelado
+* Use setas ou linhas para destacar as transições de controle de um estado para outro, conectando origem e destino
+* Rotule oseventos que disparam essas transições
+* Estabeleça condições de guarda para assegurar que as transições são apropriadas e relevantes. Uma condição de guarda força a verificação da transição contra uma condição antes de prosseguir.
