@@ -85,18 +85,28 @@ São muito usados paramodelar o comportamento de:
 ## Elementos de um diagrama de estados
 * Estado (simples): Condição ou situação na vida de um objeto que satisfaz alguma condição, realiza alguma atividade ou espera um evento.
 
+![image](https://github.com/user-attachments/assets/35dc8078-d5a1-4300-8bc0-886d2d4500a3)
+
 * Estado inicial: Determina o início da modelagem dos estados de um elemento.
+
+![image](https://github.com/user-attachments/assets/dec9968e-6c40-45d1-9e9a-e14a3f4f388a)
 
 * Estado Final: Indica o final dos estados modelados para o elemento.
 
+![image](https://github.com/user-attachments/assets/5b181226-b781-452a-b53c-ebcf9ad8ac62)
+
 * Estado composto: Estado que possui sub-estado.
 
+![image](https://github.com/user-attachments/assets/1e5e6e90-c734-47d1-844d-99f7bfe72aea)
+
 * Transição: Movimento de um estado para outro estado. Representa um evento que causa uma mudança no estado de um objeto, levando a um novo estado.
-* Ocorre da seguinte forma:
-  1. Um elemento está em um estado inicial;
-  2. Um evento ocorre;
-  3. Uma ação é realizada;
-  4. O elemento muda para um estado distinto
+  * Ocorre da seguinte forma:
+    1. Um elemento está em um estado inicial;
+    2. Um evento ocorre;
+    3. Uma ação é realizada;
+    4. O elemento muda para um estado distinto
+
+![image](https://github.com/user-attachments/assets/6bb7b457-af54-459f-b562-92650a21bc97)
 
 * Evento: Incidente que leva os objetos a transacionar de um estado para outro. Ocorrência de um estímulo que pode disparar uma transição de estados. Pode ser interno ou externo.
   * Tipo de eventos: Sinal, Chamada, Temporização, Mudança
