@@ -17,3 +17,19 @@
      * Percorre toda árvore para depois visitar
     
 Árvores binárias de pesquisa ou Árvores binárias 
+
+--
+
+# Árvore
+
+## Percorrer um árvore
+* Pré-fixado ou RED (visita raiz, vai esquerda, vai direita)
+  * Utilizado para localizar um dado
+  * Não possui ordenação
+* In-fixado ou ERD (visita esquerda, visita raiz, vai direita)
+  * Utilizado para exibir um dado
+  * Possui ordenação
+* Pós-fixado ou EDR (vai esquerda, vai direita, visita raiz)
+  * Utilizado para apagar dados
+  * Percorre todos os galhos e começa a visitar somente quando não achar nenhuma nó folha, ou seja, que não tem nenhum dado depos à esquerda ou direita
+
