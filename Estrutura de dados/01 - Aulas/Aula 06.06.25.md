@@ -24,12 +24,12 @@
 
 ## Percorrer um árvore
 * Pré-fixado ou RED (visita raiz, vai esquerda, vai direita)
-  * Utilizado para localizar um dado
+  * Utilizado para localizar, contar, inseri
   * Não possui ordenação
 * In-fixado ou ERD (visita esquerda, visita raiz, vai direita)
-  * Utilizado para exibir um dado
+  * Utilizado para exibir ordenado
   * Possui ordenação
 * Pós-fixado ou EDR (vai esquerda, vai direita, visita raiz)
-  * Utilizado para apagar dados
+  * Utilizado para deletar, calcular fator balanceamento
   * Percorre todos os galhos e começa a visitar somente quando não achar nenhuma nó folha, ou seja, que não tem nenhum dado depos à esquerda ou direita
 
